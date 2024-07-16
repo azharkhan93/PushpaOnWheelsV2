@@ -4,26 +4,14 @@ import Image from 'next/image';
 export const BookingSection = () => {
   return (
     <div className="flex items-center justify-center flex-col min-h-screen bg-gray-800 py-6 w-[100%] gap-11">
-        <div className="flex items-start justify-center flex-col gap-11 ">
-          <h2 className="text-5xl font-semibold text-gray-800">
-            Our
-            <span className="text-red-500 border-b-2 border-black"> Menu</span>
-          </h2>
-          <p className="text-2xl w-[900px]  border-2 border-red-500 overflow-hidden ">
-            jkdjfjjhfjhhjfjkhfhhjfhjjhfhhjfjhfjjhkbjhjhhfjhfjhjhkdfjhkfkjhfjhhfhjhjkjkjfjhdfjkjdjfhjhj
-            hjhjkjkjfjhdfjkjdjfhjhjhjkkhjjhfjhkjfhfjhjh
-          </p>
-        </div>
-        
-      <div className=" w-[87%] lg:w-[80%]    overflow-hidden flex items-center shadow-slate-950">
-        
-      <div className=" lg:w-[800px] h-[500px] relative shadow-slate-950 rounded-lg ">
+      <div className=" w-[87%] lg:w-[80%] overflow-hidden flex items-center shadow-slate-950">
+        <div className=" lg:w-[800px] h-[500px] relative shadow-slate-950 rounded-lg ">
           <Image
             src="/images/veg.jpg"
             alt="Booking Image"
             layout="fill"
             objectFit="cover"
-            className='rounded-md shadow-slate-950 '
+            className='rounded-md shadow-slate-950'
           />
         </div>
         {/* Form Section */}
@@ -64,6 +52,7 @@ export const BookingSection = () => {
                 name="date"
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
+                style={{ width: '100%' }}
               />
             </div>
             <div className="mb-4">
@@ -76,6 +65,7 @@ export const BookingSection = () => {
                 name="time"
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
+                style={{ width: '100%' }}
               />
             </div>
             <div className="mb-4">
@@ -85,8 +75,8 @@ export const BookingSection = () => {
               <textarea
                 id="message"
                 name="message"
-                
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                style={{ width: '100%' }}
               ></textarea>
             </div>
             <button
@@ -101,5 +91,6 @@ export const BookingSection = () => {
     </div>
   );
 };
+
 
 
