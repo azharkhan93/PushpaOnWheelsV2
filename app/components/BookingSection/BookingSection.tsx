@@ -1,19 +1,33 @@
 import React from 'react';
+import Image from 'next/image';
 
 export const BookingSection = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 py-6 w-[100%]">
-      <div className="w-[70%] bg-white shadow-md rounded-lg overflow-hidden flex items-center">
-        {/* Image Section */}
-        <div className="w-[500px] h-[500px]">
-          <img
-            src="https://via.placeholder.com/600x400"
+    <div className="flex items-center justify-center flex-col min-h-screen bg-gray-800 py-6 w-[100%] gap-11">
+        <div className="flex items-start justify-center flex-col gap-11 ">
+          <h2 className="text-5xl font-semibold text-gray-800">
+            Our
+            <span className="text-red-500 border-b-2 border-black"> Menu</span>
+          </h2>
+          <p className="text-2xl w-[900px]  border-2 border-red-500 overflow-hidden ">
+            jkdjfjjhfjhhjfjkhfhhjfhjjhfhhjfjhfjjhkbjhjhhfjhfjhjhkdfjhkfkjhfjhhfhjhjkjkjfjhdfjkjdjfhjhj
+            hjhjkjkjfjhdfjkjdjfhjhjhjkkhjjhfjhkjfhfjhjh
+          </p>
+        </div>
+        
+      <div className="w-[80%]    overflow-hidden flex items-center shadow-slate-950">
+        
+      <div className="w-[800px] h-[500px] relative shadow-slate-950 rounded-lg ">
+          <Image
+            src="/images/veg.jpg"
             alt="Booking Image"
-            className="w-full h-full object-cover"
+            layout="fill"
+            objectFit="cover"
+            className='rounded-md shadow-slate-950 '
           />
         </div>
         {/* Form Section */}
-        <div className="w-1/2 p-8 border-3 bg-slate-600 rounded-l-3xl">
+        <div className="w-[650px] p-8 border-3 bg-slate-600 rounded-l-3xl">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">Book Your Table</h2>
           <form>
             <div className="mb-4">

@@ -4,12 +4,12 @@ export const AboutSection = () => {
     return (
       <div className="flex items-center justify-center py-24 w-[100%] bg-gray-800">
         <div className="flex items-center justify-between w-[95%] flex-col md:flex-row gap-8">
-          <div className="border-red-300 rounded-lg shadow-md text-white">
+          <div className="border-red-300 rounded-lg  text-white">
             <div className="relative flex items-start justify-center flex-wrap gap-4">
               {/* Smaller Images */}
-              <img src="../../assets/veg.jpg" alt="Small Image 1" className="rounded-t-2xl rounded-bl-2xl w-[200px] h-[250px]" />
-              <img src="../../assets/veg.jpg" alt="Small Image 3" className="rounded-b-3xl rounded-tl-2xl w-[200px] h-[260px]" />
-              <img src="../../assets/veg.jpg" alt="Small Image 4" className="rounded-b-2xl rounded-tr-2xl w-[400px] h-[300px]" />
+              <img src="/images/veg.jpg" alt="Small Image 1" className="rounded-t-2xl rounded-bl-2xl w-[200px] h-[250px]" />
+              <img src="/images/veg.jpg" alt="Small Image 3" className="rounded-b-3xl rounded-tl-2xl w-[200px] h-[260px]" />
+              <img src="/images/veg.jpg" alt="Small Image 4" className="rounded-b-2xl rounded-tr-2xl w-[400px] h-[300px]" />
             </div>
           </div>
           <div className="p-4 rounded-lg text-white flex items-start flex-col gap-5 w-[700px]">

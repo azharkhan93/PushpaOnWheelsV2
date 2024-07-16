@@ -7,7 +7,7 @@ export const HeroSection = () => {
     <div
       className="flex items-center justify-center h-[100vh] w-[100%] bg-gray-800"
       style={{
-        backgroundImage: "url('../../assets/ks4.png')",
+        backgroundImage: "url('/images/ks4.png')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -37,17 +37,17 @@ export const HeroSection = () => {
         <div className="border-red-300 rounded-lg shadow-md text-white">
           <div className="relative flex items-center justify-between flex-row">
             <img
-              src="../../assets/veg.jpg"
+              src="/images/veg.jpg"
               alt="Big Image"
               className="rounded-t-3xl rounded-br-2xl w-[400px] h-[490px] mt-8"
             />
             <img
-              src="../../assets/veg.jpg"
+              src="/images/veg.jpg"
               alt="Small Image 1"
               className="rounded-t-3xl rounded-b-2xl absolute left-0 bottom-0 h-[200px] w-auto ml-[-80px]"
             />
             <img
-              src="../../assets/veg.jpg"
+              src="/images/veg.jpg"
               alt="Small Image 2"
               className="absolute top-0 right-0 h-[120px] w-auto rounded-b-3xl"
             />
