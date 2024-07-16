@@ -29,15 +29,18 @@ export const Footer = () => {
         {/* Contact Us */}
         <div className="text-center flex-1">
           <h2 className="text-lg font-semibold mb-4">Contact Us</h2>
-          <p className="text-sm mb-2">Phone: +1 234 567 890</p>
+          
           <p className="text-sm mb-2">Email: contact@company.com</p>
           <p className="text-sm mb-2">Address: 123 Veg Street, Food City</p>
+          <p className="text-sm mb-2">Phone: +1 234 567 890</p>
         </div>
-        <div className='flex items-center justify-center py-6 bg-black w-full'>
-            <p className='text-2xl text-white'> all rights reserved </p>
+        
 
-        </div>
+      </div>
+      
 
+      <div className="w-[90%] text-center mt-4">
+        <p className="text-xl text-white">© PushpaOnWheels 2024. All rights reserved.</p>
       </div>
     </footer>
   );

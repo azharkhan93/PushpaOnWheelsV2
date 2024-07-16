@@ -20,9 +20,12 @@ export const Navbar = () => {
           </a>
         </div>
   
-        <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md hidden lg:block">
-          Sign In
-        </button>
+        <button
+            className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-11 rounded-l-lg rounded-r-lg rounded-b-2xl"
+            style={{ border: '1px solid white' }}
+          >
+            Explore it
+          </button>
       </nav>
     );
   };

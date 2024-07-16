@@ -5,7 +5,7 @@ import React from 'react';
 export const HeroSection = () => {
   return (
     <div
-      className=" h-auto flex items-center justify-center lg:h-[100vh] w-[100%] bg-gray-800"
+      className="  flex items-center justify-center lg:h-[100vh] w-[100%] bg-gray-800"
       style={{
         backgroundImage: "url('/images/ks4.png')",
         backgroundSize: 'cover',
@@ -13,7 +13,7 @@ export const HeroSection = () => {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <div className="flex items-center justify-between  flex-col lg:flex-row">
+      <div className="flex items-center justify-between  flex-col lg:flex-row gap-32">
         <div
           className="p-4 rounded-lg shadow-md text-white flex items-start flex-col gap-5 lg:w-[700px] w-[100%]"
           style={{

@@ -15,9 +15,9 @@ export const BookingSection = () => {
           </p>
         </div>
         
-      <div className="w-[80%]    overflow-hidden flex items-center shadow-slate-950">
+      <div className=" w-[87%] lg:w-[80%]    overflow-hidden flex items-center shadow-slate-950">
         
-      <div className="w-[800px] h-[500px] relative shadow-slate-950 rounded-lg ">
+      <div className=" lg:w-[800px] h-[500px] relative shadow-slate-950 rounded-lg ">
           <Image
             src="/images/veg.jpg"
             alt="Booking Image"
