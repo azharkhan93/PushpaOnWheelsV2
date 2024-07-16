@@ -1,8 +1,11 @@
+import Image from 'next/image';
 export const Navbar = () => {
     return (
       <nav className="bg-black flex items-center justify-between px-8">
         <div className="flex items-center" style={{ border: '1px solid green' }}>
-          <img src="../../assets/push1.png" alt="Logo" className="h-[90px]" />
+        <Image src="/images/push1.png" alt="Logo" width={100} height={50}
+         />
+          {/* <img src="../../assets/push1.png" alt="Logo" className="h-[90px]" /> */}
         </div>
   
         <div className="flex-grow text-center hidden lg:flex lg:justify-center lg:gap-4">
