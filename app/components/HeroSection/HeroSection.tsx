@@ -6,7 +6,7 @@ export const HeroSection = () => {
   return (
     <div
     id="Home"
-      className=  "  flex items-center justify-center lg:h-[100vh] w-[100%] mt-20 lg:mt-11 px-2" 
+      className=  "  flex items-center justify-center lg:h-[100vh] w-[100%] mt-20 lg:mt-11 px-2 " 
       style={{
         backgroundImage: "url('/images/ks4.png')",
         backgroundSize: 'cover',
@@ -14,7 +14,7 @@ export const HeroSection = () => {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <div className="flex items-center justify-between  flex-col lg:flex-row  gap-3 lg:gap-32">
+      <div className="flex items-center justify-between  flex-col lg:flex-row  gap-3 lg:gap-32 mb-6">
         <div
           className="p-4 rounded-lg shadow-md text-white flex items-start flex-col gap-5 lg:w-[700px] w-[100%] mt-16 lg:mt-0"
           style={{
