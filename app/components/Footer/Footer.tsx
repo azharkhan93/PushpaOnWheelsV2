@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import { MdEmail, MdLocationOn, MdPhone } from 'react-icons/md';
+import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 export const Footer = () => {
   return (
@@ -9,10 +11,20 @@ export const Footer = () => {
 
       {/* Links and Information Section */}
       <div className="flex items-center flex-col lg:flex-row justify-between gap-8 w-full lg:w-[90%]" style={{ borderBottom: '1px solid white' }}>
-        {/* About Company */}
-        <div className="text-center flex-1">
+      <div className="text-center flex-1 mb-6 lg:mb-0">
           <h2 className="text-lg font-semibold mb-4">About Company</h2>
-          <p className="text-sm w-[100%]">We provide a variety of veg foods with a top-notch dining experience.</p>
+          <p className="text-sm w-[100%] mb-4">We provide a variety of veg foods with a top-notch dining experience.</p>
+          <div className="flex justify-center space-x-4">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <FaFacebook className="text-2xl text-white hover:text-gray-400" />
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <FaInstagram className="text-2xl text-white hover:text-gray-400" />
+            </a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <FaYoutube className="text-2xl text-white hover:text-gray-400" />
+            </a>
+          </div>
         </div>
 
         {/* Useful Links */}
@@ -29,10 +41,16 @@ export const Footer = () => {
         {/* Contact Us */}
         <div className="text-center flex-1">
           <h2 className="text-lg font-semibold mb-4">Contact Us</h2>
+          <p className="text-m mb-2 flex items-center justify-center">
+            <MdEmail size={24} fill='green' className="mr-2 " /> contact@company.com
+          </p>
           
-          <p className="text-sm mb-2">Email: contact@company.com</p>
-          <p className="text-sm mb-2">Address: 123 Veg Street, Food City</p>
-          <p className="text-sm mb-2">Phone: +1 234 567 890</p>
+          <p className="text-sm mb-2 flex items-center justify-center">
+            <MdLocationOn size={24} fill='green' className="mr-2" /> 123 Veg Street, Food City
+          </p>
+          <p className="text-sm mb-2 flex items-center justify-center">
+            <MdPhone size={24} fill='green' className="mr-2" /> +1 234 567 890
+          </p>
         </div>
         
 

@@ -1,7 +1,8 @@
 "use client"
 import { useState } from 'react';
 import Image from 'next/image';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes,  } from 'react-icons/fa';
+import { MdOutlineRestaurantMenu } from 'react-icons/md';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +31,7 @@ export const Navbar = () => {
 
       <div className="lg:hidden">
         <button onClick={toggleMenu} className="text-gray-300 hover:text-white focus:outline-none">
-          {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          {isOpen ? <MdOutlineRestaurantMenu size={35} /> : <MdOutlineRestaurantMenu size={40} />}
         </button>
       </div>
 
@@ -53,14 +54,14 @@ export const Navbar = () => {
           Services
         </a>
         <button
-            className="bg-black hover:bg-gray-950 text-white py-2 px-11  rounded-r-3xl rounded-b-3xl border-2 border-white"
+            className="bg-black hover:bg-gray-950 text-white py-2 px-11  rounded-r-3xl rounded-b-3xl border-2 border-white lg:block hidden"
           
           >
             Explore it
           </button>
       </div>
       <button
-            className="bg-black hover:bg-gray-950 text-white py-2 px-11  rounded-r-3xl rounded-b-3xl border-2 border-white"
+            className="bg-black hover:bg-gray-950 text-white py-2 px-11  rounded-r-3xl rounded-b-3xl border-2 border-white lg:block hidden"
           
           >
             Explore it
