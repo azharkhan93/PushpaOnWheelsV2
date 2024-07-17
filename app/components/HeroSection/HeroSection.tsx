@@ -6,7 +6,7 @@ export const HeroSection = () => {
   return (
     <div
     id="Home"
-      className=  "  flex items-center justify-center lg:h-[100vh] w-[100%] bg-gray-800" 
+      className=  "  flex items-center justify-center lg:h-[100vh] w-[100%] mt-24 lg:mt-11" 
       style={{
         backgroundImage: "url('/images/ks4.png')",
         backgroundSize: 'cover',
@@ -14,43 +14,43 @@ export const HeroSection = () => {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <div className="flex items-center justify-between  flex-col lg:flex-row gap-32">
+      <div className="flex items-center justify-between  flex-col lg:flex-row lg:gap-32">
         <div
-          className="p-4 rounded-lg shadow-md text-white flex items-start flex-col gap-5 lg:w-[700px] w-[100%]"
+          className="p-4 rounded-lg shadow-md text-white flex items-start flex-col gap-5 lg:w-[700px] w-[100%] mt-16 lg:mt-0"
           style={{
             background: 'rgba(255, 255, 255, 0.2)',
             border: '1px solid rgba(255, 255, 255, 0.18)',
             backdropFilter: 'blur(5px)',
           }}
         >
-          <h1 className=" text-xl lg:text-6xl font-bold mb-4 ">An Mbatience Dining Experience</h1>
-          <p className="text-2xl text-white w-full lg:w-[540px] leading-[2.5rem]">
+          <h1 className=" text-3xl lg:text-6xl font-bold lg:mb-4 ">An Ambatience Dining Experience</h1>
+          <p className=" text-l lg:text-2xl text-white w-full lg:w-[540px] lg:leading-[2.5rem]">
             Join us at the top of our restaurant where we provide a variety of veg foods for your enjoyment.
           </p>
           <button
             className="bg-black hover:bg-gray-950 text-white py-2 px-11  rounded-r-3xl rounded-b-3xl border-2 border-white"
           
           >
-            Explore it
+            Explore Now
           </button>
         </div>
 
-        <div className="border-red-300 rounded-lg shadow-md text-white">
+        <div className="border-4 border-black rounded-lg shadow-md text-white">
           <div className="relative flex items-center justify-between flex-row">
             <img
               src="/images/veg.jpg"
               alt="Big Image"
-              className="rounded-t-3xl rounded-br-2xl lg:w-[400px] lg:h-[490px] mt-8"
+              className="rounded-t-3xl rounded-br-2xl lg:w-[400px] lg:h-[490px] "
             />
             <img
-              src="/images/veg.jpg"
+              src="/images/momos.jpg"
               alt="Small Image 1"
-              className="rounded-t-3xl rounded-b-2xl absolute left-0 bottom-0 lg:h-[200px] lg:w-auto ml-[-80px]"
+              className="rounded-t-3xl rounded-b-2xl absolute left-0 bottom-0 lg:h-[200px] w-auto lg:ml-[-80px] lg:block hidden"
             />
             <img
-              src="/images/veg.jpg"
+              src="/images/cheese.jpg"
               alt="Small Image 2"
-              className="absolute top-0 right-0 lg:h-[120px] w-auto rounded-b-3xl"
+              className="absolute top-0 right-0 lg:h-[120px] w-auto rounded-b-3xl lg:block hidden"
             />
           </div>
         </div>

@@ -12,7 +12,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-black flex items-center justify-between px-4 top-0 fixed z-50 w-full">
+    <nav className="bg-black flex items-center justify-between px-4 top-0 fixed z-50 w-full ">
       <div className="flex items-center" >
         <Image src="/images/push1.png" alt="Logo" width={100} height={50} />
       </div>
