@@ -3,10 +3,10 @@ import Image from 'next/image';
 
 export const BookingSection = () => {
   return (
-    <div className="flex items-center justify-center flex-col min-h-screen bg-gray-800 py-6 w-[100%] gap-11">
-        <h2 className="text-5xl font-semibold text-white text-start">Book Your Table</h2>
+    <div className="flex items-center justify-center flex-col min-h-screen bg-gray-800 py-6 w-[100%] gap-3">
+        <h2 className=" text-4xl lg:text-5xl  text-white text-start mt-8">Book Your Table</h2>
         <div className="w-[200px] h-1  bg-gradient-to-r from-green-400 to-blue-500 rounded-md"></div>
-          <p className="text-lg text-white mb-6 w-full lg:w-[50%]">Fill out the form below to book a table at our restaurant. We offer a variety of vegetarian foods and a top-notch dining experience.</p>
+          <p className="text-lg text-white mb-6  w-[80%] lg:w-[50%] font-quicksand">Fill out the form below to book a table at our restaurant. We offer a variety of vegetarian foods and a top-notch dining experience.</p>
       <div className=" w-[87%] lg:w-[80%] overflow-hidden flex items-center shadow-slate-950">
         
         <div className=" lg:w-[800px] h-[500px] relative shadow-slate-950 rounded-lg ">

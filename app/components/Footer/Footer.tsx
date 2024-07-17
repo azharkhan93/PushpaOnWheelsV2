@@ -8,12 +8,14 @@ export const Footer = () => {
       <div className="mb-6 md:mb-0 w-[90%]">
         <Image src="/images/push1.png" alt="Logo" width={100} height={50} className="mx-auto" />
       </div>
+      
+      < hr className="w-full  bg-white"  />
 
       {/* Links and Information Section */}
-      <div className="flex items-center flex-col lg:flex-row justify-between gap-8 w-full lg:w-[90%]" style={{ borderBottom: '1px solid white' }}>
-      <div className="text-center flex-1 mb-6 lg:mb-0">
-          <h2 className="text-lg font-semibold mb-4">About Company</h2>
-          <p className="text-sm w-[100%] mb-4">We provide a variety of veg foods with a top-notch dining experience.</p>
+      <div className="flex items-center flex-col lg:flex-row justify-between gap-8 w-full lg:w-[90%]" >
+      <div className="text-center flex-1 space-y-4">
+          <h2 className="text-2xl lg:text-3xl font-semibold mb-4">About Company</h2>
+          <p className="text-l w-[100%] mb-4 text-l">We provide a variety of veg foods with a top-notch dining experience.</p>
           <div className="flex justify-center space-x-4">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <FaFacebook className="text-2xl text-white hover:text-gray-400" />
@@ -28,37 +30,39 @@ export const Footer = () => {
         </div>
 
         {/* Useful Links */}
-        <div className="text-center flex-1">
-          <h2 className="text-lg font-semibold mb-4">Useful Links</h2>
+        <div className="text-center flex-1 space-y-4 ">
+          <h2 className="text-2xl lg:text-3xl font-semibold mb-4 ">Useful Links</h2>
           <ul>
-            <li className="mb-2"><a href="#" className="text-sm hover:underline">Home</a></li>
-            <li className="mb-2"><a href="#" className="text-sm hover:underline">About Us</a></li>
-            <li className="mb-2"><a href="#" className="text-sm hover:underline">Menu</a></li>
-            {/* <li className="mb-2"><a href="#" className="text-sm hover:underline">Booking</a></li> */}
+            <li className="mb-2 text-l"><a href="#" className="text-l hover:underline">Home</a></li>
+            <li className="mb-2 text-l"><a href="#" className="text-l hover:underline">About Us</a></li>
+            <li className="mb-2 text-l"><a href="#" className="text-l hover:underline">Menu</a></li>
+            <li className="mb-2 text-l"><a href="#" className="text-l  hover:underline">Booking</a></li>
           </ul>
         </div>
 
         {/* Contact Us */}
-        <div className="text-center flex-1">
-          <h2 className="text-lg font-semibold mb-4">Contact Us</h2>
-          <p className="text-m mb-2 flex items-center justify-center">
-            <MdEmail size={24} fill='green' className="mr-2 " /> contact@company.com
+        <div className="text-center flex-1 space-y-4">
+          <h2 className=" text-2xl lg:text-3xl font-semibold mb-4">Contact Us</h2>
+          <p className="text-l mb-2 flex items-center justify-center">
+            <MdEmail size={28} fill='white' className="mr-4" /> contact@company.com
           </p>
           
-          <p className="text-sm mb-2 flex items-center justify-center">
-            <MdLocationOn size={24} fill='green' className="mr-2" /> 123 Veg Street, Food City
+          <p className="text-l mb-2 flex items-center justify-center">
+            <MdLocationOn size={28} fill='white' className="mr-4" /> 123 Veg Street, Food City
           </p>
-          <p className="text-sm mb-2 flex items-center justify-center">
-            <MdPhone size={24} fill='green' className="mr-2" /> +1 234 567 890
+          <p className="text-l mb-2 flex items-center justify-center">
+            <MdPhone size={28} fill='white' className="mr-4" /> +1 234 567 890
           </p>
         </div>
         
 
       </div>
+
+      < hr className="w-full  bg-white"  />
       
 
       <div className="w-[90%] text-center mt-4">
-        <p className="text-xl text-white">© PushpaOnWheels 2024. All rights reserved.</p>
+        <p className=" text-l lg:text-xl text-white ">© PushpaOnWheels 2024. All Rights Rserved.</p>
       </div>
     </footer>
   );

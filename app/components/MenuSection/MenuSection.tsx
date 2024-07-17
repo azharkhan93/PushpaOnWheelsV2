@@ -3,26 +3,26 @@ import React from "react";
 
 
 const menuItems = [
-    { name: "Paneer Momos", image: "/images/ks4.png" },
-    { name: "Vegetable Momos", image: "/images/ks4.png" },
-    { name: "Peri Peri Momos", image: "/images/ks4.png" },
-    { name: "Malai Paneer Momos", image: "/images/ks4.png" },
-    { name: "Vegetable Noodles", image: "/images/ks4.png" },
-    { name: "Haka Noodles", image: "/images/ks4.png" },
-    { name: "Garlic Noodles", image: "/images/ks4.png" },
-    { name: "Cheese Chilli", image: "/images/ks4.png" },
-    { name: "Manchurian", image: "/images/ks4.png" },
-    { name: "Mushroom Chilli", image: "/images/ks4.png" },
-    { name: "Fried Rice", image: "/images/ks4.png" },
-    { name: "Fried Momos", image: "/images/ks4.png" },
+    { name: "Paneer Momos", image: "/images/momos.jpg" },
+    { name: "Vegetable Momos", image: "/images/momo2.jpg" },
+    { name: "Peri Peri Momos", image: "/images/peri.webp" },
+    { name: "Malai Paneer Momos", image: "/images/momos.jpg" },
+    { name: "Vegetable Noodles", image: "/images/noodles.jpg" },
+    { name: "Haka Noodles", image: "/images/haka.jpg" },
+    { name: "Garlic Noodles", image: "/images/noodles.jpg" },
+    { name: "Cheese Chilli", image: "/images/cheese.jpg" },
+    { name: "Manchurian", image: "/images/mach.jpg" },
+    { name: "Mushroom Chilli", image: "/images/cheese.jpg" },
+    { name: "Fried Rice", image: "/images/rd.jpg" },
+    { name: "Fried Momos", image: "/images/fried.jpg" },
   ];
 export const MenuSection = () => {
   return (
     <>
       <div className="flex items-center justify-center flex-col py-20 bg-black gap-6">
-        <h2 className="text-5xl font-semibold text-white text-start">Our Menu</h2>
-        <div className="w-[200px] h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded-md ml-32"></div>
-        <p className="text-lg text-white mb-6 w-full lg:w-[50%]">
+        <h2 className="text-5xl font-semibold text-white text-start">Our <span className="text-yellow-900">Menu</span></h2>
+        <div className="w-[200px] h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded-md "></div>
+        <p className="text-lg text-white mb-6  lg:w-[50%] w-[80%]">
           Fill out the form below to book a table at our restaurant. We offer a variety of vegetarian foods and a top-notch dining experience.
         </p>
 
