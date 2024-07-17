@@ -44,20 +44,23 @@ export const Navbar = () => {
         <button onClick={toggleMenu} className="text-gray-300 hover:text-white focus:outline-none absolute top-4 right-4">
           <FaTimes size={28} />
         </button>
-        <a href="/" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-xl font-medium" onClick={toggleMenu}>
+        <a href="#Home" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-xl font-medium" onClick={toggleMenu}>
           Home
         </a>
-        <a href="/about" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-xl font-medium" onClick={toggleMenu}>
+        <a href="#About" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-xl font-medium" onClick={toggleMenu}>
           About
         </a>
-        <a href="/services" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-xl font-medium" onClick={toggleMenu}>
-          Services
+        <a href="#Menu" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-xl font-medium" onClick={toggleMenu}>
+          Menu
+        </a>
+        <a href="#Booking" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-xl font-medium" onClick={toggleMenu}>
+          Booking
         </a>
         <button
             className="bg-black hover:bg-gray-950 text-white py-2 px-11  rounded-r-3xl rounded-b-3xl border-2 border-white "
           
           >
-            Explore it
+            Book Table
           </button>
       </div>
 
@@ -65,7 +68,7 @@ export const Navbar = () => {
             className="bg-black hover:bg-gray-950 text-white py-2 px-11  rounded-r-3xl rounded-b-3xl border-2 border-white lg:block hidden"
           
           >
-            Explore it
+            Book Table
           </button>
     </nav>
   );

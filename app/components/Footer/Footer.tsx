@@ -33,10 +33,10 @@ export const Footer = () => {
         <div className="text-center flex-1 space-y-4 ">
           <h2 className="text-2xl lg:text-3xl font-semibold mb-4 ">Useful Links</h2>
           <ul>
-            <li className="mb-2 text-l"><a href="#" className="text-l hover:underline">Home</a></li>
-            <li className="mb-2 text-l"><a href="#" className="text-l hover:underline">About Us</a></li>
-            <li className="mb-2 text-l"><a href="#" className="text-l hover:underline">Menu</a></li>
-            <li className="mb-2 text-l"><a href="#" className="text-l  hover:underline">Booking</a></li>
+            <li className="mb-2 text-l"><a href="#Home" className="text-l hover:underline">Home</a></li>
+            <li className="mb-2 text-l"><a href="#About" className="text-l hover:underline">About</a></li>
+            <li className="mb-2 text-l"><a href="#Menu" className="text-l hover:underline">Menu</a></li>
+            <li className="mb-2 text-l"><a href="#Booking" className="text-l  hover:underline">Booking</a></li>
           </ul>
         </div>
 

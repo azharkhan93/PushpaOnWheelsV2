@@ -16,7 +16,7 @@ export const ReviewsSection = () => {
           
     <div className='flex items-center justify-center lg:flex-row gap-11 flex-col py-6'>
     <div className=" w-[334px] lg:w-[380px]  bg-white shadow-red-950 rounded-b-3xl rounded-t-3xl rounded-l-lg overflow-hidden   ">
-      <div className="flex flex-col items-start p-2">
+      <div className="flex flex-col items-center lg:items-start p-2">
         <div className="  w-20 h-20 rounded-full overflow-hidden border-2 border-white">
           <img
             src="/images/ks.webp"
@@ -38,7 +38,7 @@ export const ReviewsSection = () => {
       </div>
     </div>
     <div className="w-[334px] lg:w-[380px] bg-white shadow-red-950 rounded-b-3xl rounded-t-3xl rounded-l-lg overflow-hidden   ">
-      <div className="flex flex-col items-start p-2">
+      <div className="flex flex-col items-center lg:items-start p-2">
         <div className="  w-20 h-20 rounded-full overflow-hidden border-2 border-white">
           <img
             src="/images/ks.webp"
@@ -60,7 +60,7 @@ export const ReviewsSection = () => {
       </div>
     </div>
     <div className=" w-[334px] lg:w-[380px] bg-white shadow-red-950 rounded-b-3xl rounded-t-3xl rounded-l-lg overflow-hidden   ">
-      <div className="flex flex-col items-start p-2">
+      <div className="flex flex-col items-center lg:items-start p-2">
         <div className="  w-20 h-20 rounded-full overflow-hidden border-2 border-white">
           <img
             src="/images/ks.webp"
