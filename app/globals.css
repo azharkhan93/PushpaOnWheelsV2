@@ -2,12 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+@layer base {
+  html, body {
+    @apply font-quicksand;
+  }
 
-html,body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+  h1 {
+    @apply font-quicksand;
+  }
+  h2 {
+    @apply font-quicksand;
+  }
+
+  p {
+    @apply font-quicksand;
+  }
+}
+
+.font-quicksand {
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 400;
 }
 
 

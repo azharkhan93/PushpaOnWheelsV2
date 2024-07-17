@@ -22,7 +22,7 @@ export const HeroSection = () => {
             backdropFilter: 'blur(5px)',
           }}
         >
-          <h1 className=" text-xl lg:text-6xl font-bold mb-4">An Mbatience Dining Experience</h1>
+          <h1 className=" text-xl lg:text-6xl font-bold mb-4 ">An Mbatience Dining Experience</h1>
           <p className="text-2xl text-white w-full lg:w-[540px] leading-[2.5rem]">
             Join us at the top of our restaurant where we provide a variety of veg foods for your enjoyment.
           </p>
