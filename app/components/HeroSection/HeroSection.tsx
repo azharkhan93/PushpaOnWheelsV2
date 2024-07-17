@@ -6,7 +6,7 @@ export const HeroSection = () => {
   return (
     <div
     id="Home"
-      className=  "  flex items-center justify-center lg:h-[100vh] w-[100%] mt-16 lg:mt-11" 
+      className=  "  flex items-center justify-center lg:h-[100vh] w-[100%] mt-18 lg:mt-11 px-3" 
       style={{
         backgroundImage: "url('/images/ks4.png')",
         backgroundSize: 'cover',
