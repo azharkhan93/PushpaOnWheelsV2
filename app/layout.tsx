@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
+import { Footer, Navbar } from "./components";
+
+
 
 export const metadata: Metadata = {
   title: "PushpaOnWheels",
@@ -16,7 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body >
+        <Navbar/>
+        {children}
+        <Footer/>
+        </body>
     </html>
   );
 }
