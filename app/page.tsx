@@ -6,13 +6,13 @@ import { AboutSection } from "./components/AboutSection/AboutSection";
 export default function Home() {
   return (
    <>
-   <Navbar />
+   
    <HeroSection />
    <AboutSection />
    <MenuSection />
    <BookingSection />
    <ReviewsSection />
-   <Footer />
+   
    </>
   );
 }
