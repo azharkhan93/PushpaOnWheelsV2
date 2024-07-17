@@ -7,7 +7,9 @@ import { FaStar } from 'react-icons/fa';
 
 export const ReviewsSection = () => {
   return (
-    <div className='bg-black h-auto lg:h-[100vh] flex items-center justify-center  gap-4 flex-col '>
+    <div 
+    id="Review"
+    className='bg-black h-auto lg:h-[100vh] flex items-center justify-center  gap-4 flex-col '>
       
       
         <h2 className="text-4xl lg:text-5xl  text-white text-start mt-8">Client <span className='text-yellow-900'>Reviews</span></h2>

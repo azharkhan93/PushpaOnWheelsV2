@@ -44,14 +44,14 @@ export const Footer = () => {
         <div className="text-center flex-1 space-y-4">
           <h2 className=" text-2xl lg:text-3xl font-semibold mb-4">Contact Us</h2>
           <p className="text-l mb-2 flex items-center justify-center">
-            <MdEmail size={28} fill='white' className="mr-4" /> contact@company.com
+            <MdEmail size={28} fill='white' className="mr-4" /> pushpavegonwheels@gmail.com
           </p>
           
           <p className="text-l mb-2 flex items-center justify-center">
             <MdLocationOn size={28} fill='white' className="mr-4" /> 123 Veg Street, Food City
           </p>
           <p className="text-l mb-2 flex items-center justify-center">
-            <MdPhone size={28} fill='white' className="mr-4" /> +1 234 567 890
+            <MdPhone size={28} fill='white' className="mr-4" /> +91 234 567 8901
           </p>
         </div>
         

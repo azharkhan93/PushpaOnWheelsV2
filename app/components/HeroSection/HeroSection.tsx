@@ -5,7 +5,8 @@ import React from 'react';
 export const HeroSection = () => {
   return (
     <div
-      className="  flex items-center justify-center lg:h-[100vh] w-[100%] bg-gray-800"
+    id="Home"
+      className=  "  flex items-center justify-center lg:h-[100vh] w-[100%] bg-gray-800" 
       style={{
         backgroundImage: "url('/images/ks4.png')",
         backgroundSize: 'cover',

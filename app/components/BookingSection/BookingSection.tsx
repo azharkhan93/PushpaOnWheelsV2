@@ -3,7 +3,9 @@ import Image from 'next/image';
 
 export const BookingSection = () => {
   return (
-    <div className="flex items-center justify-center flex-col min-h-screen bg-gray-800 py-6 w-[100%] gap-3">
+    <div
+    id='Booking'
+     className="flex items-center justify-center flex-col min-h-screen bg-gray-800 py-6 w-[100%] gap-3">
         <h2 className=" text-4xl lg:text-5xl  text-white text-start mt-8">Book Your Table</h2>
         <div className="w-[200px] h-1  bg-gradient-to-r from-green-400 to-blue-500 rounded-md"></div>
           <p className="text-lg text-white mb-6  w-[80%] lg:w-[50%] font-quicksand">Fill out the form below to book a table at our restaurant. We offer a variety of vegetarian foods and a top-notch dining experience.</p>

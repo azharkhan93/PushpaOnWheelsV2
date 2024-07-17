@@ -19,7 +19,9 @@ const menuItems = [
 export const MenuSection = () => {
   return (
     <>
-      <div className="flex items-center justify-center flex-col py-20 bg-black gap-6">
+      <div
+      id="Menu"
+       className="flex items-center justify-center flex-col py-20 bg-black gap-6">
         <h2 className="text-5xl font-semibold text-white text-start">Our <span className="text-yellow-900">Menu</span></h2>
         <div className="w-[200px] h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded-md "></div>
         <p className="text-lg text-white mb-6  lg:w-[50%] w-[80%]">

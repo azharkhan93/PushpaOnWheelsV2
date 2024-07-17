@@ -12,20 +12,23 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-black flex items-center justify-between px-4">
+    <nav className="bg-black flex items-center justify-between px-4 top-0 fixed z-50 w-full">
       <div className="flex items-center" >
         <Image src="/images/push1.png" alt="Logo" width={100} height={50} />
       </div>
 
       <div className={`flex-grow text-center hidden lg:flex lg:justify-center lg:gap-4`}>
-        <a href="/" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+        <a href="#Home" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
           Home
         </a>
-        <a href="/about" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+        <a href="#About" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
           About
         </a>
-        <a href="/services" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-          Services
+        <a href="#Menu" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+          Menu
+        </a>
+        <a href="#Booking" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+          Booking
         </a>
       </div>
 
