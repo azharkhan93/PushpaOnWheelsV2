@@ -37,7 +37,7 @@ export const MenuSection = () => {
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h2 className="text-xl font-semibold text-white text-center truncate w-full">
+                <h2 className="text-xl font-semibold text-white text-center truncate w-full border-b-2 border-black">
                   {item.name}
                 </h2>
               </div>
