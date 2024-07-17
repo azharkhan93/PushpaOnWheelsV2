@@ -28,12 +28,12 @@ export const MenuSection = () => {
 
         <div className="flex items-center justify-center py-6 gap-5 flex-wrap lg:mt-8 mt-2">
           {menuItems.map((item, index) => (
-            <div key={index} className="bg-red-950 shadow-lg overflow-hidden rounded-b-3xl rounded-t-3xl rounded-r-3xl  shadow-emerald-950 flex flex-row items-center gap-4 px-4 py-2 border-2 border-green  w-[300px] ">
+            <div key={index} className="bg-red-950 shadow-lg overflow-hidden rounded-b-3xl rounded-t-3xl rounded-r-3xl  shadow-emerald-950 flex flex-row items-center gap-4 px-2 py-2 border-2 border-green  w-[310px] ">
               <div className="flex-shrink-0">
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="lg:h-[100px] h-[70px] lg:w-[70px]  w-[70px] object-cover rounded-full border-2 border-gray-200"
+                  className="lg:h-[100px] h-[70px] lg:w-[80px]  w-[70px] object-cover rounded-full border-2 border-gray-200"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
