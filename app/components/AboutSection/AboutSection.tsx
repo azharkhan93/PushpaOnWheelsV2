@@ -13,16 +13,18 @@ export const AboutSection = () => {
             </div>
           </div>
           <div className="p-4 rounded-lg text-white flex items-start flex-col w-full gap-5 lg:w-[700px]">
+          <h2 className="text-5xl font-semibold text-black text-start">About Us</h2>
+          <div className="w-[200px] h-1  bg-gradient-to-r from-green-400 to-blue-500 rounded-md ml-24"></div>
             <h1 className="lg:text-6xl font-bold mb-4">An Ambience Dining Experience</h1>
             <p className=" text-xl lg:text-2xl text-white lg:w-[540px] leading-[2.5rem]">
               Join us at the top of our restaurant, we provide a variety of veg foods for your delight.
             </p>
             <button
-              className="bg-black hover:bg-gray-600 text-white py-2 px-11 rounded-l-lg rounded-r-lg rounded-b-2xl"
-              style={{ border: '1px solid white' }}
-            >
-              Explore Now
-            </button>
+            className="bg-black hover:bg-gray-950 text-white py-2 px-11  rounded-r-3xl rounded-b-3xl border-2 border-white"
+          
+          >
+            Explore it
+          </button>
           </div>
         </div>
       </div>

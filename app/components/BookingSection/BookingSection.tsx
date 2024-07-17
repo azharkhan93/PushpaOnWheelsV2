@@ -5,6 +5,7 @@ export const BookingSection = () => {
   return (
     <div className="flex items-center justify-center flex-col min-h-screen bg-gray-800 py-6 w-[100%] gap-11">
         <h2 className="text-5xl font-semibold text-white text-start">Book Your Table</h2>
+        <div className="w-[200px] h-1  bg-gradient-to-r from-green-400 to-blue-500 rounded-md"></div>
           <p className="text-lg text-white mb-6 w-full lg:w-[50%]">Fill out the form below to book a table at our restaurant. We offer a variety of vegetarian foods and a top-notch dining experience.</p>
       <div className=" w-[87%] lg:w-[80%] overflow-hidden flex items-center shadow-slate-950">
         
@@ -84,7 +85,7 @@ export const BookingSection = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-950 focus:outline-none focus:ring-2 focus:ring-white rounded-r-3xl rounded-b-3xl border-2 border-white"
             >
               Submit
             </button>

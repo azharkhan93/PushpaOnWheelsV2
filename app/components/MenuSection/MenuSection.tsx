@@ -5,16 +5,9 @@ export const MenuSection = () => {
   return (
     <>
       <div className="flex items-center justify-center flex-col py-20">
-        <div className="flex items-start justify-start flex-col gap-11 px-11">
-          <h2 className="text-5xl font-semibold text-gray-800">
-            Our
-            <span className="text-red-500 border-b-2 border-black"> Menu</span>
-          </h2>
-          <p className="text-2xl w-[900px]  border-2 border-red-500 overflow-hidden ">
-            jkdjfjjhfjhhjfjkhfhhjfhjjhfhhjfjhfjjhkbjhjhhfjhfjhjhkdfjhkfkjhfjhhfhjhjkjkjfjhdfjkjdjfhjhj
-            hjhjkjkjfjhdfjkjdjfhjhjhjkkhjjhfjhkjfhfjhjh
-          </p>
-        </div>
+      <h2 className="text-5xl font-semibold text-black text-start">Our Menu</h2>
+      <div className="w-[200px] h-1  bg-gradient-to-r from-green-400 to-blue-500 rounded-md"></div>
+          <p className="text-lg text-black mb-6 w-full lg:w-[50%]">Fill out the form below to book a table at our restaurant. We offer a variety of vegetarian foods and a top-notch dining experience.</p>
 
         <div className="flex items-center justify-center  py-6 gap-5 flex-wrap mt-8">
           <div className="shadow-lg overflow-hidden rounded-full shadow-emerald-950 flex justify-between gap-8 px-2 border-2 border-black py-1 ">

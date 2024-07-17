@@ -53,18 +53,18 @@ export const Navbar = () => {
           Services
         </a>
         <button
-        className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-11 rounded-l-lg rounded-r-lg rounded-b-2xl"
-        style={{ border: '1px solid white' }}
-      >
-        Explore it
-      </button>
+            className="bg-black hover:bg-gray-950 text-white py-2 px-11  rounded-r-3xl rounded-b-3xl border-2 border-white"
+          
+          >
+            Explore it
+          </button>
       </div>
       <button
-        className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-11 rounded-l-lg rounded-r-lg rounded-b-2xl lg:block hidden"
-        style={{ border: '1px solid white' }}
-      >
-        Explore it
-      </button>
+            className="bg-black hover:bg-gray-950 text-white py-2 px-11  rounded-r-3xl rounded-b-3xl border-2 border-white"
+          
+          >
+            Explore it
+          </button>
     </nav>
   );
 };
