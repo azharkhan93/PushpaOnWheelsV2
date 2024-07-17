@@ -11,7 +11,7 @@ export const Footer = () => {
       
       < hr className="w-full  bg-white"  />
 
-      {/* Links and Information Section */}
+      
       <div className="flex items-center flex-col lg:flex-row justify-between gap-8 w-full lg:w-[90%]" >
       <div className="text-center flex-1 space-y-4">
           <h2 className="text-2xl lg:text-3xl font-semibold mb-4">About Company</h2>
@@ -41,17 +41,17 @@ export const Footer = () => {
         </div>
 
         {/* Contact Us */}
-        <div className="text-center flex-1 space-y-4">
+        <div className="text-center flex flex-col flex-1 space-y-4 items-center justify-center">
           <h2 className=" text-2xl lg:text-3xl font-semibold mb-4">Contact Us</h2>
-          <p className="text-l mb-2 flex items-center justify-center">
-            <MdEmail size={28} fill='white' className="mr-4" /> pushpavegonwheels@gmail.com
+          <p className="text-l mb-2 flex items-center justify-center  gap-4">
+            <MdEmail size={28} fill='white'  /> pushpavegonwheels@gmail.com
           </p>
           
-          <p className="text-l mb-2 flex items-center justify-center">
-            <MdLocationOn size={28} fill='white' className="mr-4" /> 123 Veg Street, Food City
+          <p className="text-l mb-2 flex items-center  justify-center  gap-4">
+            <MdLocationOn size={28} fill='white' /> 123 Veg Street, Food City gghh
           </p>
-          <p className="text-l mb-2 flex items-center justify-center">
-            <MdPhone size={28} fill='white' className="mr-4" /> +91 234 567 8901
+          <p className="text-l mb-2 flex items-center justify-center  gap-4">
+            <MdPhone size={28} fill='white'  /> +91 234 567 89017767887678
           </p>
         </div>
         
