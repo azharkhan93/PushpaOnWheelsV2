@@ -20,10 +20,10 @@ export const BookingSection = () => {
         </div>
         {/* Form Section */}
         <div className="w-[650px] p-8 border-3 bg-slate-600 rounded-l-3xl">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Book Your Table</h2>
+          <h2 className="text-2xl font-semibold text-white mb-4">Book Your Table</h2>
           <form>
             <div className="mb-4">
-              <label htmlFor="name" className="block text-gray-700">
+              <label htmlFor="name" className="block text-white">
                 Name
               </label>
               <input
@@ -35,7 +35,7 @@ export const BookingSection = () => {
               />
             </div>
             <div className="mb-4">
-              <label htmlFor="email" className="block text-gray-700">
+              <label htmlFor="email" className="block text-white">
                 Email
               </label>
               <input
@@ -47,7 +47,7 @@ export const BookingSection = () => {
               />
             </div>
             <div className="mb-4">
-              <label htmlFor="date" className="block text-gray-700">
+              <label htmlFor="date" className="block text-white">
                 Date
               </label>
               <input
@@ -60,7 +60,7 @@ export const BookingSection = () => {
               />
             </div>
             <div className="mb-4">
-              <label htmlFor="time" className="block text-gray-700">
+              <label htmlFor="time" className="block text-white">
                 Time
               </label>
               <input
@@ -73,7 +73,7 @@ export const BookingSection = () => {
               />
             </div>
             <div className="mb-4">
-              <label htmlFor="message" className="block text-gray-700">
+              <label htmlFor="message" className="block text-white">
                 Message
               </label>
               <textarea
