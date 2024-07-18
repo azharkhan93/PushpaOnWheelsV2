@@ -47,7 +47,7 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
   };
 
   return (
-    <div id="Booking" className="flex items-center justify-center flex-col min-h-screen bg-gray-800 py-6 w-full gap-3">
+    <div id="Booking" className="flex items-center justify-center flex-col min-h-screen bg-gray-800 py-6 w-full gap-3" style={{backgroundColor:"#FF00FF"}}>
       <h2 className="text-4xl lg:text-5xl text-white text-start mt-8">Book Your Table</h2>
       <div className="w-[200px] h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded-md"></div>
       <p className="text-lg text-white mb-6 w-[80%] lg:w-[50%] font-quicksand">

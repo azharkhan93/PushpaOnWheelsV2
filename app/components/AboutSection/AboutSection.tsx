@@ -4,7 +4,7 @@ export const AboutSection = () => {
     return (
       <div
       id="About" 
-      className="flex items-center justify-center py-24 w-[100%] bg-gray-800">
+      className="flex items-center justify-center py-24 w-[100%] bg-gray-800" style={{backgroundColor:"#FF00FF"}}>
         <div className="flex items-center justify-between w-[95%] flex-col-reverse md:flex-row gap-8">
           <div className="border-red-300 rounded-lg  text-white">
             <div className="relative flex items-start justify-center  flex-wrap gap-4">
