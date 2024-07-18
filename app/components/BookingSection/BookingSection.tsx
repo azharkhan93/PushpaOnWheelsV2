@@ -1,24 +1,27 @@
 "use client"
 import React from 'react';
 import Image from 'next/image';
-import { Formik, Form, Field, ErrorMessage, FormikProps } from 'formik';
+import { Formik, Form, Field, ErrorMessage, FormikHelpers } from 'formik';
 import * as Yup from 'yup';
+
 
 type BookingFormValues = {
   name: string;
   email: string;
-  date: Date;
+  date: string; 
   time: string;
   message?: string;
 }
 
+
 const initialValues: BookingFormValues = {
   name: '',
   email: '',
-  date: new Date(),
+  date: '',
   time: '',
   message: '',
 };
+
 
 const validationSchema = Yup.object().shape({
   name: Yup.string().required('Name is required'),
@@ -28,13 +31,16 @@ const validationSchema = Yup.object().shape({
   message: Yup.string(),
 });
 
+
 interface BookingSectionProps {}
 
+
 export const BookingSection: React.FC<BookingSectionProps> = () => {
-  const handleSubmit = (values: BookingFormValues, { setSubmitting }: FormikProps<BookingFormValues>) => {
+  
+  const handleSubmit = (values: BookingFormValues, { setSubmitting }: FormikHelpers<BookingFormValues>) => {
     // Handle form submission logic here
     console.log(values);
-    // Example: submitForm(values).then(() => setSubmitting(false));
+    
   };
 
   return (
@@ -129,6 +135,7 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
     </div>
   );
 };
+
 
 
 
