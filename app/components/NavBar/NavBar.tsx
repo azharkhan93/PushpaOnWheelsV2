@@ -1,8 +1,16 @@
-"use client"
-import { useState } from 'react';
-import Image from 'next/image';
-import { FaBars, FaTimes,  } from 'react-icons/fa';
-import { MdOutlineRestaurantMenu } from 'react-icons/md';
+"use client";
+import { useState } from "react";
+import Image from "next/image";
+import {  FaTimes } from "react-icons/fa";
+import { MdOutlineRestaurantMenu } from "react-icons/md";
+import { NavLinks } from "../NavLinks";
+
+const navLinks = [
+  { href: "#Home", label: "Home" },
+  { href: "#About", label: "About" },
+  { href: "/menu", label: "Menu" },
+  { href: "#Booking", label: "Booking" },
+];
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,69 +20,52 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-black flex items-center justify-between px-4 top-0 fixed z-50 w-full ">
-      <div className="flex items-center" >
+    <nav className="bg-black flex items-center justify-between px-4 top-0 fixed z-50 w-full">
+      <div className="flex items-center">
         <Image src="/images/push1.png" alt="Logo" width={100} height={50} />
       </div>
 
-      <div className={`flex-grow text-center hidden lg:flex lg:justify-center lg:gap-4`}>
-        <a href="#Home" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-          Home
-        </a>
-        <a href="#About" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-          About
-        </a>
-        <a href="#Menu" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-          Menu
-        </a>
-        <a href="#Booking" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-          Booking
-        </a>
+      <div className="flex-grow text-center hidden lg:flex lg:justify-center lg:gap-4">
+      {navLinks.map((link) => (
+          <NavLinks key={link.href} href={link.href}>
+            {link.label}
+          </NavLinks>
+        ))}
       </div>
 
       <div className="lg:hidden">
-        <button onClick={toggleMenu} className="text-gray-300 hover:text-white focus:outline-none">
-          {isOpen ? <MdOutlineRestaurantMenu size={35} /> : <MdOutlineRestaurantMenu size={40} />}
+        <button
+          onClick={toggleMenu}
+          className="text-gray-300 hover:text-white focus:outline-none"
+        >
+          <MdOutlineRestaurantMenu size={isOpen ? 35 : 40} />
         </button>
       </div>
 
       <div
         className={`z-50 fixed top-0 left-0 h-[100vh] w-[100vw] bg-black text-white transform ${
-          isOpen ? 'translate-x-0' : '-translate-x-full'
+          isOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out flex flex-col justify-center items-center space-y-6`}
-        
       >
-        <button onClick={toggleMenu} className="text-gray-300 hover:text-white focus:outline-none absolute top-4 right-4">
+        <button
+          onClick={toggleMenu}
+          className="text-gray-300 hover:text-white focus:outline-none absolute top-4 right-4"
+        >
           <FaTimes size={28} />
         </button>
-        <a href="#Home" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-xl font-medium" onClick={toggleMenu}>
-          Home
-        </a>
-        <a href="#About" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-xl font-medium" onClick={toggleMenu}>
-          About
-        </a>
-        <a href="#Menu" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-xl font-medium" onClick={toggleMenu}>
-          Menu
-        </a>
-        <a href="#Booking" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-xl font-medium" onClick={toggleMenu}>
-          Booking
-        </a>
-        <button
-            className="bg-black hover:bg-gray-950 text-white py-2 px-11  rounded-r-3xl rounded-b-3xl border-2 border-white "
-          
-          >
-            Book Table
-          </button>
+        {navLinks.map((link) => (
+          <NavLinks key={link.href} href={link.href} onClick={toggleMenu}>
+            {link.label}
+          </NavLinks>
+        ))}
+        <button className="bg-black hover:bg-gray-950 text-white py-2 px-11 rounded-r-3xl rounded-b-3xl border-2 border-white">
+          Book Table
+        </button>
       </div>
 
-      <button
-            className="bg-black hover:bg-gray-950 text-white py-2 px-11  rounded-r-3xl rounded-b-3xl border-2 border-white lg:block hidden"
-          
-          >
-            Book Table
-          </button>
+      <button className="bg-black hover:bg-gray-950 text-white py-2 px-11 rounded-r-3xl rounded-b-3xl border-2 border-white lg:block hidden">
+        Book Table
+      </button>
     </nav>
   );
 };
-
-

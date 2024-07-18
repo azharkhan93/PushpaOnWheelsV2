@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
-
 import React from 'react';
 import Image from 'next/image';
 import { FaStar } from 'react-icons/fa';
@@ -23,17 +22,17 @@ export const ReviewCard: React.FC<ReviewCardprops>= ({ imageSrc, clientName, rev
             
             className="w-full h-full object-cover"
              />
-          <img
-            src={imageSrc}
-            alt="Client"
-            className="w-full h-full object-cover"
-          />
+         
         </div>
-        <div className="flex items-center mt-2 flex-row  justify-between rounded-md gap-3">
+        <div className="flex items-center mt-2 flex-col  justify-between rounded-md gap-3">
+          
           <h1 className='text-1xl text-white'>{clientName}</h1>
+         
+          <div className='flex flex-row'>
           {[...Array(5)].map((_, i) => (
             <FaStar key={i} className="text-yellow-500" />
           ))}
+          </div>
         </div>
         <div className="flex flex-col items-center mt-4">
           <blockquote className="text-center text-white italic">
