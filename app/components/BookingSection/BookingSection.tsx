@@ -11,6 +11,7 @@ type BookingFormValues = {
   date: string; 
   time: string;
   message?: string;
+  phoneNumber: number | string;
 }
 
 
@@ -20,6 +21,7 @@ const initialValues: BookingFormValues = {
   date: '',
   time: '',
   message: '',
+  phoneNumber: '',
 };
 
 
@@ -29,6 +31,7 @@ const validationSchema = Yup.object().shape({
   date: Yup.date().required('Date is required'),
   time: Yup.string().required('Time is required'),
   message: Yup.string(),
+  phoneNumber: Yup.string().matches(/^[0-9]+$/, 'Must be only digits').required('Phone number is required'),
 });
 
 
@@ -71,6 +74,18 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
                     className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                   <ErrorMessage name="name" component="div" className="text-red-500 text-sm mt-1" />
+                </div>
+                <div className="mb-4">
+                  <label htmlFor="phoneNumber" className="block text-white">
+                    Phone Number
+                  </label>
+                  <Field
+                    type="number"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                  <ErrorMessage name="phoneNumber" component="div" className="text-red-500 text-sm mt-1" />
                 </div>
                 <div className="mb-4">
                   <label htmlFor="email" className="block text-white">
