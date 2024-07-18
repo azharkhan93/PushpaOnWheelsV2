@@ -36,11 +36,11 @@ interface BookingSectionProps {}
 
 
 export const BookingSection: React.FC<BookingSectionProps> = () => {
-  
+  // Handle form submission
   const handleSubmit = (values: BookingFormValues, { setSubmitting }: FormikHelpers<BookingFormValues>) => {
     // Handle form submission logic here
     console.log(values);
-    
+    // Example: submitForm(values).then(() => setSubmitting(false));
   };
 
   return (
@@ -50,7 +50,7 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
       <p className="text-lg text-white mb-6 w-[80%] lg:w-[50%] font-quicksand">
         Fill out the form below to book a table at our restaurant. We offer a variety of vegetarian foods and a top-notch dining experience.
       </p>
-      <div className="w-[87%] lg:w-[80%] overflow-hidden flex items-center shadow-slate-950">
+      <div className="w-[97%] lg:w-[80%] overflow-hidden flex items-center shadow-slate-950">
         <div className="lg:w-[800px] h-[500px] relative shadow-slate-950 rounded-lg">
           <Image src="/images/veg.jpg" alt="Booking Image" layout="fill" objectFit="cover" className="rounded-md shadow-slate-950" />
         </div>
@@ -84,6 +84,7 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
                   />
                   <ErrorMessage name="email" component="div" className="text-red-500 text-sm mt-1" />
                 </div>
+                <div className='flex lg:gap-24 gap-4'>
                 <div className="mb-4">
                   <label htmlFor="date" className="block text-white">
                     Date
@@ -107,6 +108,7 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
                     className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                   <ErrorMessage name="time" component="div" className="text-red-500 text-sm mt-1" />
+                </div>
                 </div>
                 <div className="mb-4">
                   <label htmlFor="message" className="block text-white">
