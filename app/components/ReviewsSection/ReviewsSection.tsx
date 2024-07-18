@@ -3,24 +3,9 @@
 
 import React from 'react';
 import { ReviewCard } from '../ReviewCard';
+import { reviews } from '@/utils/constants';
 
-const reviews =[
-  {
-  imageSrc: "/images/ks.webp",
-  clientName: "Regular Client",
-  reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-},
-{
-  imageSrc: "/images/ks.webp",
-  clientName: "Regular Client",
-  reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-},
-{
-  imageSrc: "/images/ks.webp",
-  clientName: "Regular Client",
-  reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-}
-]
+
 
 export const ReviewsSection = () => {
   return (

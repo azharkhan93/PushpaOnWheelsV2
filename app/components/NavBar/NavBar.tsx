@@ -4,13 +4,8 @@ import Image from "next/image";
 import {  FaTimes } from "react-icons/fa";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import { NavLinks } from "../NavLinks";
+import { navLinks } from "../../../utils/constants";
 
-const navLinks = [
-  { href: "#Home", label: "Home" },
-  { href: "#About", label: "About" },
-  { href: "/menu", label: "Menu" },
-  { href: "#Booking", label: "Booking" },
-];
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
