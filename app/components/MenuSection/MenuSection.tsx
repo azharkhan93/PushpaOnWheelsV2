@@ -8,18 +8,13 @@ export const MenuSection = () => {
     <>
       <div className="flex items-center justify-center flex-col py-20 bg-black gap-6 ">
         <h2 className=" text-4xl lg:text-5xl font-semibold text-white text-start">
-          Our <span className="text-yellow-900">Menu</span>
+          Explore Our <span className="text-yellow-900" style={{color: "#FF00FF"}}>Menu</span>
         </h2>
         <div className="w-[200px] h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded-md "></div>
         <p className="text-lg text-white mb-6  lg:w-[50%] w-[80%]">
-          Discover our exclusive <span className="text-yellow-900">Menu</span>{" "}
+          Discover our exclusive <span className="text-yellow-900" style={{color: "#FF00FF"}}> exclusive Menu</span>{" "}
           and enjoy a top-notch dining experience. We offer a variety of
-          vegetarian foods, each dish meticulously crafted with fresh, locally
-          sourced ingredients. Whether you are looking for a hearty meal or a
-          light bite, our menu has something to satisfy every palate. Indulge in
-          our specials and experience flavors that will leave you craving for
-          more. Fill out the form below to book a table at our restaurant and
-          embark on a culinary journey like no other
+          vegetarian foods
         </p>
         <div className="flex items-center justify-center flex-wrap flex-row  bg-black gap-6">
           {foodItems.map((item, index) => (
