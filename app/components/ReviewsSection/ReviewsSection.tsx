@@ -3,7 +3,8 @@
 
 import React from 'react';
 import { ReviewCard } from '../ReviewCard';
-import { reviews } from '@/utils/constants';
+import { reviews } from '@/constants';
+
 
 
 

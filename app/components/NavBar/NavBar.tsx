@@ -4,7 +4,8 @@ import Image from "next/image";
 import {  FaTimes } from "react-icons/fa";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import { NavLinks } from "../NavLinks";
-import { navLinks } from "../../../utils/constants";
+import { navLinks } from "@/constants";
+
 
 
 export const Navbar = () => {
