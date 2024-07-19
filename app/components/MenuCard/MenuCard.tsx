@@ -9,7 +9,7 @@ type FoodCardProps = {
 
 export const MenuCard: React.FC<FoodCardProps> = ({ image, title, price, rating }) => {
   return (
-    <div className="bg-gray-800 text-white  shadow-lg p-4 gap-6 w-64 rounded-l-3xl">
+    <div className="bg-gray-800 text-white  shadow-lg p-4 gap-6 w-[348px] lg:w-64 rounded-l-3xl">
       <div className="flex justify-between items-center mb-4 gap-2">
       <Image src={image} alt={title} width={70} height={100} className="rounded-full" />
         <div className="text-lg font-bold">${price}</div>
