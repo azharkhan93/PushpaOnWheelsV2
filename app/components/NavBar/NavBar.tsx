@@ -61,12 +61,12 @@ export const Navbar = () => {
         </button>
         </a>
       </div>
-      <div>
-       
+      
       <button className="bg-black hover:bg-gray-950 text-white py-2 px-11 rounded-r-3xl rounded-b-3xl border-2 border-white lg:block hidden">
         Book Table
-      </button> 
-      </div>
+      </button>
+      
+      
     </nav>
   );
 };
