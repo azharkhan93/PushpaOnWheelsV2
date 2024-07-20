@@ -25,15 +25,17 @@ export const HeroSection = () => {
           }}
         >
           <h1 className=" text-3xl lg:text-6xl font-bold lg:mb-4 ">An Ambatience Dining Experience</h1>
-          <p className=" text-l lg:text-2xl text-white w-full lg:w-[540px] lg:leading-[2.5rem]">
+          <p className=" text-l lg:text-2xl text-white w-full lg:w-[540px] lg:leading-[2.5rem] capitalize">
             Join us at the top of our restaurant where we provide a variety of veg foods for your enjoyment.
           </p>
+          <a href="#Menu">
           <button
             className="bg-black hover:bg-gray-950 text-white py-2 px-11  rounded-r-3xl rounded-b-3xl border-2 border-white"
           
           >
             Explore Now
           </button>
+          </a>
         </div>
 
         <div className=" rounded-lg shadow-md text-white px-2">
