@@ -46,6 +46,6 @@ export const navLinks = [
     { image: '/images/noodles.jpg', title: 'Cheese Fries ', price: 16, rating: 4.8 },
     { image: '/images/noodles.jpg', title: 'Plain Wedges ', price: 16, rating: 4.8 },
     { image: '/images/noodles.jpg', title: 'Perri Perri Wedges ', price: 16, rating: 4.8 },
-    { image: '/images/noodles.jpg', title: 'Cheese wedges ', price: 16, rating: 4.8 },
+    { image: '/images/noodles.jpg', title: 'Cheese Wedges ', price: 16, rating: 4.8 },
     
   ];
