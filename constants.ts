@@ -37,5 +37,15 @@ export const navLinks = [
     { image: '/images/fried.jpg', title: 'Fried Rice', price: 16, rating: 4.8 },
     { image: '/images/cheese.jpg', title: 'Mushroom Chilli', price: 16, rating: 4.8 },
     { image: '/images/noodles.jpg', title: 'Garlic Noodles ', price: 16, rating: 4.8 },
+    { image: '/images/noodles.jpg', title: 'Aloo Tiki Bruger ', price: 16, rating: 4.8 },
+    { image: '/images/noodles.jpg', title: 'Double Decker Burger ', price: 16, rating: 4.8 },
+    { image: '/images/noodles.jpg', title: 'Cheese Burger ', price: 16, rating: 4.8 },
+    { image: '/images/noodles.jpg', title: 'Double Cheese Slice ', price: 16, rating: 4.8 },
+    { image: '/images/noodles.jpg', title: 'Plain Fries ', price: 16, rating: 4.8 },
+    { image: '/images/noodles.jpg', title: 'Peri Peri Fries ', price: 16, rating: 4.8 },
+    { image: '/images/noodles.jpg', title: 'Cheese Fries ', price: 16, rating: 4.8 },
+    { image: '/images/noodles.jpg', title: 'Plain Wedges ', price: 16, rating: 4.8 },
+    { image: '/images/noodles.jpg', title: 'Perri Perri Wedges ', price: 16, rating: 4.8 },
+    { image: '/images/noodles.jpg', title: 'Cheese wedges ', price: 16, rating: 4.8 },
     
   ];
