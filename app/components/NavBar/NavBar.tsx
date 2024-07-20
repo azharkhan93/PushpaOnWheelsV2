@@ -55,19 +55,14 @@ export const Navbar = () => {
             {link.label}
           </NavLinks>
         ))}
-        <a href="#Booking">
-  <button className="bg-black hover:bg-gray-950 text-white py-2 px-11 rounded-r-3xl rounded-b-3xl border-2 border-white">
-    Book Table
-  </button>
-</a>
+        <button className="bg-black hover:bg-gray-950 text-white py-2 px-11 rounded-r-3xl rounded-b-3xl border-2 border-white">
+          Book Table
+        </button>
       </div>
-
-      <a href="#Booking">
 
       <button className="bg-black hover:bg-gray-950 text-white py-2 px-11 rounded-r-3xl rounded-b-3xl border-2 border-white lg:block hidden">
         Book Table
       </button>
-      </a>
     </nav>
   );
 };
