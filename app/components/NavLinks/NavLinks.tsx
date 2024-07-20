@@ -14,7 +14,7 @@ export const NavLinks: React.FC <NavLinksProps>= ({ href, children, onClick }) =
   return (
     <Link href={href} passHref>
     <span
-      className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-xl font-medium lg:text-xl lg:font-medium"
+      className="text-white hover:text-white px-3 py-2 rounded-md text-xl font-medium lg:text-xl lg:font-medium"
       onClick={onClick}
     >
       {children}

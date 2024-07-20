@@ -4,8 +4,8 @@ export const AboutSection = () => {
   return (
     <div
       id="About"
-      className="flex items-center justify-center py-24 w-[100%] bg-gray-800"
-      style={{ backgroundColor: "#FF00FF" }}
+      className="flex items-center justify-center py-24 w-[100%] bg-magenta"
+      
     >
       <div className="flex items-center justify-between w-[95%] flex-col-reverse md:flex-row gap-8">
         <div className="border-red-300 rounded-lg  text-white">

@@ -9,11 +9,11 @@ export const MenuSection = () => {
       <div id= "Menu" 
       className="flex items-center justify-center flex-col py-20 bg-black gap-6 ">
         <h2 className=" text-4xl lg:text-5xl font-semibold text-white text-start">
-          Explore Our <span className="text-yellow-900" style={{color: "#FF00FF"}}>Menu</span>
+          Explore Our <span className="text-magenta" >Menu</span>
         </h2>
         <div className="w-[200px] h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded-md "></div>
-        <p className="text-lg text-white mb-6  lg:w-[50%] w-[80%]">
-          Discover our exclusive <span className="text-yellow-900" style={{color: "#FF00FF"}}> exclusive Menu</span>{" "}
+        <p className="text-lg text-white mb-6  lg:w-[50%] w-[80%] capitalize">
+          Discover our exclusive <span className="text-magenta capitalize"> exclusive Menu</span>{" "}
           and enjoy a top-notch dining experience. We offer a variety of
           vegetarian foods
         </p>

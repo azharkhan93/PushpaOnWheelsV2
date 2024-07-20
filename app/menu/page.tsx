@@ -13,8 +13,7 @@ const productData: Product[] = [
   { id: 2, name: 'Veg Momos', category: 'Momos', image: '/images/' },
   { id: 3, name: 'Chicken ', category: 'Biryani', image: '/images/chicken-biryani.jpg' },
   { id: 4, name: 'Veg Biryani', category: 'Biryani', image: '/images/veg-biryani.jpg' },
-  // { id: 5, name: 'Paneer Tikka', category: 'Starters', image: '/images/paneer-tikka.jpg' },
-  // { id: 6, name: 'Chicken Tikka', category: 'Starters', image: '/images/chicken-tikka.jpg' },
+ 
 ];
 
 const categories: string[] = ['All', ...Array.from(new Set(productData.map(product => product.category)))];
