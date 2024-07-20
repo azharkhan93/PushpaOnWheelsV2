@@ -1,27 +1,28 @@
 export const navLinks = [
     { href: "#Home", label: "Home" },
     { href: "#About", label: "About" },
-    { href: "/menu", label: "Menu" },
+    { href: "#Menu", label: "Menu" },
     { href: "#Booking", label: "Booking" },
   ];
 
   export const reviews = [
     {
-    imageSrc: "/images/ks.webp",
-    clientName: "Regular Client",
-    reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  },
-  {
-    imageSrc: "/images/ks.webp",
-    clientName: "Regular Client",
-    reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  },
-  {
-    imageSrc: "/images/ks.webp",
-    clientName: "Regular Client",
-    reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-  }
-  ]
+      imageSrc: "/images/ks.webp",
+      clientName: "John Doe",
+      reviewText: 'The food was absolutely wonderful, from preparation to presentation, very pleasing. We especially enjoyed the special bar drinks, the cucumber/cilantro infused vodka martini, and the coconut mojito.',
+    },
+    {
+      imageSrc: "/images/ks.webp",
+      clientName: "Jane Smith",
+      reviewText: 'Everything we ordered from the menu was delicious! The service was excellent and the staff were very friendly. A great dining experience overall. We will definitely be back!',
+    },
+    {
+      imageSrc: "/images/ks.webp",
+      clientName: "Michael Brown",
+      reviewText: 'The ambiance was perfect, and the vegetarian options were diverse and flavorful. It’s great to find a place that caters to vegetarian diets so well. Highly recommend!',
+    }
+  ];
+  
 
   export const foodItems = [
     { image: '/images/cheese.jpg', title: 'Paneer Momos', price: 18, rating: 5.0 },

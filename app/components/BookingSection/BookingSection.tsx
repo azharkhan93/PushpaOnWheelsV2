@@ -58,7 +58,7 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
           <Image src="/images/veg.jpg" alt="Booking Image" layout="fill" objectFit="cover" className="rounded-md shadow-slate-950" />
         </div>
         {/* Form Section */}
-        <div className="w-[650px] p-8 border-3 bg-slate-600 rounded-l-3xl">
+        <div className="w-[650px] p-8 border-3 bg-black rounded-l-3xl">
           <h2 className="text-2xl font-semibold text-white mb-4">Book Your Table</h2>
           <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
             {({ isSubmitting }) => (

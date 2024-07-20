@@ -15,9 +15,11 @@ export const ReviewsSection = () => {
     className='bg-black h-auto lg:h-[100vh] flex items-center justify-center  gap-4 flex-col '>
       
       
-        <h2 className="text-4xl lg:text-5xl  text-white text-start mt-8">Client <span className='text-yellow-900'>Reviews</span></h2>
+      <h2 className="text-4xl lg:text-5xl text-white text-start mt-8">
+        Client <span className='text-yellow-900' style={{color: "#FF00FF"}}>Reviews</span>
+      </h2>
         <div className="w-[200px] h-1  bg-gradient-to-r from-green-400 to-blue-500 rounded-md "></div>
-          <p className="text-lg text-white mb-6  w-[80%] lg:w-[50%] font-quicksand">Fill out the form below to book a table at our restaurant. We offer a variety of vegetarian foods and a top-notch dining experience.</p>
+          <p className="text-lg text-white mb-6  w-[80%] lg:w-[50%] font-quicksand"> See what our clients have to say about their experience at our restaurant.</p>
 
           <div className="flex items-center justify-center lg:flex-row gap-11 flex-col py-8">
         {reviews.map((review, index) => (

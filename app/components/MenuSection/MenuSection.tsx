@@ -6,7 +6,8 @@ import { foodItems } from "@/constants";
 export const MenuSection = () => {
   return (
     <>
-      <div className="flex items-center justify-center flex-col py-20 bg-black gap-6 ">
+      <div id= "Menu" 
+      className="flex items-center justify-center flex-col py-20 bg-black gap-6 ">
         <h2 className=" text-4xl lg:text-5xl font-semibold text-white text-start">
           Explore Our <span className="text-yellow-900" style={{color: "#FF00FF"}}>Menu</span>
         </h2>
@@ -16,7 +17,7 @@ export const MenuSection = () => {
           and enjoy a top-notch dining experience. We offer a variety of
           vegetarian foods
         </p>
-        <div className="flex items-center justify-center flex-wrap flex-row  bg-black gap-6">
+        <div className="flex items-center justify-center flex-wrap flex-row   gap-6" >
           {foodItems.map((item, index) => (
             <MenuCard
               key={index}
