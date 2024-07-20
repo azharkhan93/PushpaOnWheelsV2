@@ -18,11 +18,11 @@ export const MenuCard: React.FC<FoodCardProps> = ({ image, title, price, rating 
       <p className="text-sm text-magenta ">Per Plate</p>
       <div className="flex items-center justify-between mt-2">
         <div className="flex items-center justify-center gap-1">
-        <FaStar className="text-yellow-500 mr-1" />
+        <FaStar className="text-yellow-500 mr-1"  />
         <span>{rating}</span>
         </div>
         <div className="flex ">
-        <FaShoppingCart size={26} className="text-white cursor-pointer" />
+        <FaShoppingCart size={26} fill='magenta' className="text-white cursor-pointer" />
       </div>
       </div>
       

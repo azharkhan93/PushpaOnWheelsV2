@@ -16,7 +16,7 @@ export const ReviewsSection = () => {
       
       
       <h2 className="text-4xl lg:text-5xl text-white text-start mt-8">
-        Client <span className='text-yellow-900' style={{color: "#FF00FF"}}>Reviews</span>
+        Client <span className='text-magenta' style={{color: "#FF00FF"}}>Reviews</span>
       </h2>
         <div className="w-[200px] h-1  bg-gradient-to-r from-green-400 to-blue-500 rounded-md "></div>
           <p className="text-lg text-white mb-6  w-[80%] lg:w-[50%] font-quicksand capitalize"> See what our clients have to say about their experience at our restaurant.</p>
