@@ -1,9 +1,22 @@
+"use client"
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, { useState } from "react";
 import { MenuCard } from "../MenuCard";
 import { foodItems } from "@/constants";
+import { CategoryFilter } from "../CategoryFilter";
 
 export const MenuSection = () => {
+  const[filterItems, setFilteredItems] = useState(foodItems)
+
+  const handleProductsChange = (category: string) => {
+    
+      setFilteredItems(
+        category === "All" ? foodItems : foodItems.filter(item => item.category === category)
+      );
+    
+  }
+ 
+
   return (
     <>
       <div id= "Menu" 
@@ -17,8 +30,9 @@ export const MenuSection = () => {
           and enjoy a top-notch dining experience. We offer a variety of
           vegetarian foods
         </p>
+        <CategoryFilter onFilterChange={handleProductsChange} />
         <div className="flex items-center justify-center flex-wrap flex-row   gap-6" >
-          {foodItems.map((item, index) => (
+          {filterItems.map((item, index) => (
             <MenuCard
               key={index}
               image={item.image}
