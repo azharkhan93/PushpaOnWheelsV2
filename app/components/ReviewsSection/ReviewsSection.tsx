@@ -21,7 +21,7 @@ export const ReviewsSection = () => {
         <div className="w-[200px] h-1  bg-gradient-to-r from-green-400 to-blue-500 rounded-md "></div>
           <p className="text-lg text-white mb-6  w-[80%] lg:w-[50%] font-quicksand capitalize reveal reveal-from-left"> See what our clients have to say about their experience at our restaurant.</p>
 
-          <div className="flex items-center justify-center lg:flex-row gap-11 flex-col py-8 reveal reveal-from-right">
+          <div className="flex items-center justify-center lg:flex-row gap-11 flex-col py-8 reveal reveal-from-bottom">
         {reviews.map((review, index) => (
           <ReviewCard
             key={index}
