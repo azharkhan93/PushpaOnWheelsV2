@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Formik, Form, Field, ErrorMessage, FormikHelpers } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
-
+import Swal from 'sweetalert2';
 
 type BookingFormValues = {
   name: string;
@@ -15,7 +15,6 @@ type BookingFormValues = {
   phoneNumber: number | string;
 }
 
-
 const initialValues: BookingFormValues = {
   name: '',
   email: '',
@@ -24,7 +23,6 @@ const initialValues: BookingFormValues = {
   message: '',
   phoneNumber: '',
 };
-
 
 const validationSchema = Yup.object().shape({
   name: Yup.string().required('Name is required'),
@@ -35,27 +33,31 @@ const validationSchema = Yup.object().shape({
   phoneNumber: Yup.string().matches(/^[0-9]+$/, 'Must be only digits').required('Phone number is required'),
 });
 
-
 interface BookingSectionProps {}
 
-
 export const BookingSection: React.FC<BookingSectionProps> = () => {
-  // Handle form submission
-  const handleSubmit = async (values: BookingFormValues, { setSubmitting }: FormikHelpers<BookingFormValues>) => {
+  const handleSubmit = async (values: BookingFormValues, { setSubmitting, resetForm }: FormikHelpers<BookingFormValues>) => {
     try {
-
       const response = await axios.post("/api/booking", values);
-
       if (response.status === 200) {
-        alert('Booking request sent successfully!');
+        Swal.fire({
+          icon: 'success',
+          title: 'Booking request sent',
+          showConfirmButton: false,
+          timer: 1500
+        });
+        resetForm();
       }
-    }catch(error) {
+    } catch (error) {
       console.log(error);
-      alert("user failed");
-    }finally {
+      Swal.fire({
+        icon: 'error',
+        title: 'Failed to send booking request',
+        text: 'Please try again later.',
+      });
+    } finally {
       setSubmitting(false);
     }
-    
   };
 
   return (
@@ -69,16 +71,13 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
         <div className="lg:w-[800px] h-[500px] relative shadow-slate-950 rounded-lg">
           <Image src="/images/veg.jpg" alt="Booking Image" layout="fill" objectFit="cover" className="rounded-md shadow-slate-950" />
         </div>
-       
         <div className="w-[650px] p-8 border-3 bg-black rounded-l-3xl">
           <h2 className="text-2xl font-semibold text-white mb-4">Book Your Table</h2>
           <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
             {({ isSubmitting }) => (
               <Form>
                 <div className="mb-4">
-                  <label htmlFor="name" className="block text-white">
-                    Name
-                  </label>
+                  <label htmlFor="name" className="block text-white">Name</label>
                   <Field
                     type="text"
                     id="name"
@@ -88,9 +87,7 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
                   <ErrorMessage name="name" component="div" className="text-red-500 text-sm mt-1" />
                 </div>
                 <div className="mb-4">
-                  <label htmlFor="phoneNumber" className="block text-white">
-                    Phone Number
-                  </label>
+                  <label htmlFor="phoneNumber" className="block text-white">Phone Number</label>
                   <Field
                     type="number"
                     id="phoneNumber"
@@ -100,9 +97,7 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
                   <ErrorMessage name="phoneNumber" component="div" className="text-red-500 text-sm mt-1" />
                 </div>
                 <div className="mb-4">
-                  <label htmlFor="email" className="block text-white">
-                    Email
-                  </label>
+                  <label htmlFor="email" className="block text-white">Email</label>
                   <Field
                     type="email"
                     id="email"
@@ -111,36 +106,30 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
                   />
                   <ErrorMessage name="email" component="div" className="text-red-500 text-sm mt-1" />
                 </div>
-                <div className='flex  justify-between'>
-                <div className="mb-4">
-                  <label htmlFor="date" className="block text-white">
-                    Date
-                  </label>
-                  <Field
-                    type="date"
-                    id="date"
-                    name="date"
-                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  />
-                  <ErrorMessage name="date" component="div" className="text-red-500 text-sm mt-1" />
+                <div className="flex justify-between">
+                  <div className="mb-4">
+                    <label htmlFor="date" className="block text-white">Date</label>
+                    <Field
+                      type="date"
+                      id="date"
+                      name="date"
+                      className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                    <ErrorMessage name="date" component="div" className="text-red-500 text-sm mt-1" />
+                  </div>
+                  <div className="mb-4">
+                    <label htmlFor="time" className="block text-white">Time</label>
+                    <Field
+                      type="time"
+                      id="time"
+                      name="time"
+                      className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                    <ErrorMessage name="time" component="div" className="text-red-500 text-sm mt-1" />
+                  </div>
                 </div>
                 <div className="mb-4">
-                  <label htmlFor="time" className="block text-white">
-                    Time
-                  </label>
-                  <Field
-                    type="time"
-                    id="time"
-                    name="time"
-                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  />
-                  <ErrorMessage name="time" component="div" className="text-red-500 text-sm mt-1" />
-                </div>
-                </div>
-                <div className="mb-4">
-                  <label htmlFor="message" className="block text-white">
-                    Message
-                  </label>
+                  <label htmlFor="message" className="block text-white">Message</label>
                   <Field
                     as="textarea"
                     id="message"
@@ -164,6 +153,8 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
     </div>
   );
 };
+
+
 
 
 
