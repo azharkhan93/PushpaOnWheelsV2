@@ -44,7 +44,7 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
   const handleSubmit = async (values: BookingFormValues, { setSubmitting }: FormikHelpers<BookingFormValues>) => {
     try {
 
-      const response = await axios.post("", values);
+      const response = await axios.post("/api/booking", values);
 
       if (response.status === 200) {
         alert('Booking request sent successfully!');

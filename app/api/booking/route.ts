@@ -1,17 +1,20 @@
-
-
-import { NextApiRequest, NextApiResponse } from 'next';
+import { NextRequest, NextResponse } from 'next/server';
 import sgMail from '@sendgrid/mail';
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY as string);
 
-const sendEmailHandler = async (req: NextApiRequest, res: NextApiResponse) => {
-  if (req.method === 'POST') {
-    const { name, email, date, time, message, phoneNumber } = req.body;
+export async function POST(req: NextRequest) {
+  try {
+    const body = await req.json();
+    const { name, email, date, time, message, phoneNumber } = body;
+
+    if (!name || !email || !date || !time || !phoneNumber) {
+      return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
+    }
 
     const msg = {
-      to: 'owner@example.com', 
-      from: 'no-reply@example.com', 
+      to: 'azhr999990000@gmail.com', 
+      from: 'azharkhan.work101@gmail.com', 
       subject: 'New Table Booking',
       text: `
         Name: ${name}
@@ -31,17 +34,17 @@ const sendEmailHandler = async (req: NextApiRequest, res: NextApiResponse) => {
       `,
     };
 
-    try {
-      await sgMail.send(msg);
-      res.status(200).json({ success: true });
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ error: 'Failed to send email' });
+    await sgMail.send(msg);
+    return NextResponse.json({ success: true }, { status: 200 });
+  } catch (error: any) {
+    console.error('Error sending email:', error);
+    if (error.response) {
+      console.error('SendGrid error response:', error.response.body);
     }
-  } else {
-    res.status(405).json({ error: 'Method not allowed' });
+    return NextResponse.json({ error: 'Failed to send email' }, { status: 500 });
   }
-};
+}
 
-export default sendEmailHandler;
+
+
 
