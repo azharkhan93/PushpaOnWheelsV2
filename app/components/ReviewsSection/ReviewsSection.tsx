@@ -15,13 +15,13 @@ export const ReviewsSection = () => {
     className='bg-black h-auto lg:h-[100vh] flex items-center justify-center  gap-4 flex-col '>
       
       
-      <h2 className="text-4xl lg:text-5xl text-white text-start mt-8">
-        Client <span className='text-magenta' style={{color: "#FF00FF"}}>Reviews</span>
+      <h2 className="text-4xl lg:text-5xl text-white text-start mt-8 reveal reveal-from-left">
+        Client <span className='text-magenta' >Reviews</span>
       </h2>
         <div className="w-[200px] h-1  bg-gradient-to-r from-green-400 to-blue-500 rounded-md "></div>
-          <p className="text-lg text-white mb-6  w-[80%] lg:w-[50%] font-quicksand capitalize"> See what our clients have to say about their experience at our restaurant.</p>
+          <p className="text-lg text-white mb-6  w-[80%] lg:w-[50%] font-quicksand capitalize reveal reveal-from-left"> See what our clients have to say about their experience at our restaurant.</p>
 
-          <div className="flex items-center justify-center lg:flex-row gap-11 flex-col py-8">
+          <div className="flex items-center justify-center lg:flex-row gap-11 flex-col py-8 reveal reveal-from-right">
         {reviews.map((review, index) => (
           <ReviewCard
             key={index}

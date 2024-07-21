@@ -9,7 +9,7 @@ export const AboutSection = () => {
     >
       <div className="flex items-center justify-between w-[95%] flex-col-reverse md:flex-row gap-8">
         <div className="border-red-300 rounded-lg  text-white">
-          <div className="relative flex items-start justify-center  flex-wrap gap-4">
+          <div className="relative flex items-start justify-center  flex-wrap gap-4 reveal reveal-from-left">
             <img
               src="/images/veg.jpg"
               alt="Small Image 1"
@@ -27,7 +27,7 @@ export const AboutSection = () => {
             />
           </div>
         </div>
-        <div className="p-4 rounded-lg text-white flex items-start flex-col w-full gap-5 lg:w-[700px]">
+        <div className="p-4 rounded-lg text-white flex items-start flex-col w-full gap-5 lg:w-[700px] reveal reveal-from-right">
           <h2 className=" text-4xl lg:text-5xl font-semibold text-white text-start">
             About Us
           </h2>

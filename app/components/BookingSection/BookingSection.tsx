@@ -68,10 +68,10 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
         Fill out the form below to book a table at our restaurant. We offer a variety of vegetarian foods and a top-notch dining experience.
       </p>
       <div className="w-[92%] lg:w-[80%] overflow-hidden flex items-center shadow-slate-950">
-        <div className="lg:w-[800px] h-[500px] relative shadow-slate-950 rounded-lg">
+        <div className="lg:w-[800px] h-[500px] relative shadow-slate-950 rounded-lg reveal reveal-from-left">
           <Image src="/images/veg.jpg" alt="Booking Image" layout="fill" objectFit="cover" className="rounded-md shadow-slate-950" />
         </div>
-        <div className="w-[650px] p-8 border-3 bg-black rounded-l-3xl">
+        <div className="w-[650px] p-8 border-3 bg-black rounded-l-3xl reveal reveal-from-bottom">
           <h2 className="text-2xl font-semibold text-white mb-4">Book Your Table</h2>
           <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
             {({ isSubmitting }) => (
