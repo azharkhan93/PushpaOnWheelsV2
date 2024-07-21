@@ -34,7 +34,7 @@ function animateFrom(elem: HTMLElement, direction: number = 0) {
     { x: x, y: y, autoAlpha: 0 },
     // { autoAlpha: 0 },
     {
-      duration: 4,
+      duration: 3,
       x: 0,
       y: 0,
       delay: 0.2,
