@@ -61,7 +61,7 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
   };
 
   return (
-    <div id="Booking" className="flex items-center justify-center flex-col min-h-screen bg-gray-800 py-6 w-full gap-3" style={{backgroundColor:"#FF00FF"}}>
+    <div id="Booking" className="flex items-center justify-center flex-col min-h-screen bg-magenta py-6 w-full gap-3">
       <h2 className="text-4xl lg:text-5xl text-white text-start mt-8">Book Your Table</h2>
       <div className="w-[200px] h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded-md"></div>
       <p className="text-lg text-white mb-6 w-[80%] lg:w-[50%] font-quicksand capitalize">
@@ -71,7 +71,7 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
         <div className="lg:w-[800px] h-[500px] relative shadow-slate-950 rounded-lg reveal reveal-from-left">
           <Image src="/images/veg.jpg" alt="Booking Image" layout="fill" objectFit="cover" className="rounded-md shadow-slate-950" />
         </div>
-        <div className="w-[650px] p-8 border-3 bg-black rounded-l-3xl reveal reveal-from-bottom">
+        <div className="w-[650px] p-8 border-3 bg-black rounded-l-3xl reveal reveal-from-right">
           <h2 className="text-2xl font-semibold text-white mb-4">Book Your Table</h2>
           <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
             {({ isSubmitting }) => (
