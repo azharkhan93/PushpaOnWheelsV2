@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Formik, Form, Field, ErrorMessage, FormikHelpers } from 'formik';
 import * as Yup from 'yup';
+import axios from 'axios';
 
 
 type BookingFormValues = {
@@ -40,10 +41,21 @@ interface BookingSectionProps {}
 
 export const BookingSection: React.FC<BookingSectionProps> = () => {
   // Handle form submission
-  const handleSubmit = (values: BookingFormValues, { setSubmitting }: FormikHelpers<BookingFormValues>) => {
-    // Handle form submission logic here
-    console.log(values);
-    // Example: submitForm(values).then(() => setSubmitting(false));
+  const handleSubmit = async (values: BookingFormValues, { setSubmitting }: FormikHelpers<BookingFormValues>) => {
+    try {
+
+      const response = await axios.post("", values);
+
+      if (response.status === 200) {
+        alert('Booking request sent successfully!');
+      }
+    }catch(error) {
+      console.log(error);
+      alert("user failed");
+    }finally {
+      setSubmitting(false);
+    }
+    
   };
 
   return (
@@ -152,6 +164,7 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
     </div>
   );
 };
+
 
 
 

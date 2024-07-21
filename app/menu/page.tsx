@@ -19,19 +19,19 @@ const productData: Product[] = [
 const categories: string[] = ['All', ...Array.from(new Set(productData.map(product => product.category)))];
 
 export default function Home() {
-  const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  // const [selectedCategory, setSelectedCategory] = useState<string>('All');
 
-  const filteredProducts = selectedCategory === 'All'
-    ? productData
-    : productData.filter(product => product.category === selectedCategory);
+  // const filteredProducts = selectedCategory === 'All'
+  //   ? productData
+  //   : productData.filter(product => product.category === selectedCategory);
 
   return (
     <>
       <div className="bg-white p-6 mt-24">
         <h2 className="text-2xl font-bold mb-4">Our Products</h2>
 
-        {/* Category Buttons */}
-        <div className="mb-6">
+        
+        {/* <div className="mb-6">
           {categories.map((category, index) => (
             <button
               key={index}
@@ -45,7 +45,7 @@ export default function Home() {
           ))}
         </div>
 
-        {/* Product Flexbox */}
+        
         <div className="flex flex-wrap -m-2">
           {filteredProducts.map((product: Product) => (
             <div key={product.id} className="p-2  w-1/2  lg:w-1/4">
@@ -56,7 +56,7 @@ export default function Home() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </>
   );
