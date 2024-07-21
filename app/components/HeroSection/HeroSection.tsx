@@ -15,7 +15,7 @@ export const HeroSection = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="flex items-center justify-between  flex-col lg:flex-row  gap-3 lg:gap-32 mb-6">
+      <div className="flex items-center justify-between  flex-col lg:flex-row  gap-3 lg:gap-32 mb-6 ">
         <div
           className="p-4 rounded-lg shadow-md text-white flex items-start flex-col gap-5 lg:w-[700px] w-[100%] mt-16 lg:mt-0"
           style={{
@@ -24,10 +24,10 @@ export const HeroSection = () => {
             backdropFilter: "blur(5px)",
           }}
         >
-          <h1 className=" text-3xl lg:text-6xl font-bold lg:mb-4 ">
+          <h1 className=" text-3xl lg:text-6xl font-bold lg:mb-4 reveal reveal-from-left">
             An Ambatience Dining Experience
           </h1>
-          <p className=" text-l lg:text-2xl text-white w-full lg:w-[540px] lg:leading-[2.5rem] capitalize">
+          <p className=" text-l lg:text-2xl text-white w-full lg:w-[540px] lg:leading-[2.5rem] capitalize reveal reveal-from-left">
             Join us at the top of our restaurant where we provide a variety of
             veg foods for your enjoyment.
           </p>
@@ -39,7 +39,7 @@ export const HeroSection = () => {
         </div>
 
         <div className=" rounded-lg shadow-md text-white px-2">
-          <div className="relative flex items-center justify-between flex-row  mt-0 lg:mt-11">
+          <div className="relative flex items-center justify-between flex-row  mt-0 lg:mt-11 reveal reveal-from-right">
             <Image
               src="/images/veg.jpg"
               alt="Big Image"
