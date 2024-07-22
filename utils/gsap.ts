@@ -94,31 +94,3 @@ export const animateCharacter = (character: NodeListOf<Element>) => {
 };
 
 
-// reveal reveal-from-bottom
-
-// reveal reveal reveal-from-top
-
-// useEffect(() => {
-//     revealAnimation();
-//   });
-
-// <html lang="en" className="hide-scrollbar">
-// <head key={1}>
-//   <title>Arista Villas</title>
-//   <meta name="theme-color" content={theme.colors.primaryColor} />
-//   <Script
-//     src="https://www.googletagmanager.com/gtag/js?id=G-ZH2M9MM88P"
-//     strategy="afterInteractive"
-//   />
-//   <Script id="gtagscript">{`window.dataLayer = window.dataLayer || [];
-// function gtag(){dataLayer.push(arguments);}
-// gtag('js', new Date());
-
-// gtag('config', 'G-ZH2M9MM88P');`}</Script>
-// </head>
-// <body className={inter.className}>
-//   <div className="w-[100vw] flex justify-center bg-[#F6EBE3] overflow-x-hidden">
-//     <div className="w-[100%] ">{children}</div>
-//   </div>
-// </body>
-// </html>

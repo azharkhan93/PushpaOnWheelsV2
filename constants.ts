@@ -31,58 +31,56 @@ export const foodItems = [
   {
     image: "/images/cheese.jpg",
     title: "Paneer Momos",
-    price: 18,
+    price: 130,
     rating: 5.0,
-    icon: "/images/momo2.jpg"
+    icon: "/images/momo2.jpg",
+    categor: "Momos"
   },
   {
     image: "/images/momo2.jpg",
     title: "Vegetable Momos",
-    price: 12,
+    price: 100,
     rating: 3.8,
-    
+    categor: "Momos"
   },
   {
     image: "/images/peri.webp",
     title: "Peri Peri Momo",
-    price: 24,
+    price: 200,
     rating: 4.9,
-   
+    categor: "Momos"
   },
+  
   {
     image: "/images/noodles.jpg",
     title: "Malai Paneer Momos",
-    price: 24,
+    price: 250,
     rating: 4.9,
-   
+    categor: "Momos"
   },
-  { image: "/images/fried.jpg", title: "Fried Momos", price: 24, rating: 4.9,  },
+  { image: "/images/fried.jpg", title: "Fried Momos", price: 160, rating: 4.9, categor: "Momos" },
   {
     image: "/images/noodles.jpg",
     title: "Vegetable Noodles",
-    price: 36,
+    price: 100,
     rating: 5.0,
-   
   },
-  { image: "/images/nod.jpg", title: "Haka Noodles", price: 16, rating: 4.8  },
+  { image: "/images/nod.jpg", title: "Haka Noodles", price: 160, rating: 4.8 },
   { image: "/images/mach.jpg", title: "Manchurian", price: 16, rating: 4.8 },
   {
     image: "/images/cheese.jpg",
     title: "Mushroom Chilli",
-    
+
     price: 16,
     rating: 4.8,
-    
   },
   { image: "/images/fried.jpg", title: "Fried Rice", price: 16, rating: 4.8 },
   {
     image: "/images/noodles.jpg",
     title: "Garlic Noodles",
-    price: 16,
+    price: 200,
     rating: 4.8,
     category: "Noodles",
-    
-    
   },
   {
     image: "/images/noodles.jpg",
@@ -90,7 +88,6 @@ export const foodItems = [
     price: 16,
     rating: 4.8,
     category: "Burgers",
-    
   },
   {
     image: "/images/noodles.jpg",
@@ -98,7 +95,6 @@ export const foodItems = [
     price: 16,
     rating: 4.8,
     category: "Burgers",
-    
   },
   {
     image: "/images/noodles.jpg",
@@ -106,7 +102,6 @@ export const foodItems = [
     price: 16,
     rating: 4.8,
     category: "Burgers",
-    
   },
   {
     image: "/images/noodles.jpg",
@@ -114,7 +109,6 @@ export const foodItems = [
     price: 16,
     rating: 4.8,
     category: "Burgers",
-   
   },
   {
     image: "/images/noodles.jpg",
@@ -122,7 +116,6 @@ export const foodItems = [
     price: 16,
     rating: 4.8,
     category: "Fries",
-    
   },
   {
     image: "/images/fried.jpg",
@@ -130,8 +123,6 @@ export const foodItems = [
     price: 16,
     rating: 4.8,
     category: "Fries",
-    
-    
   },
 
   {
@@ -140,7 +131,6 @@ export const foodItems = [
     price: 16,
     rating: 4.8,
     category: "Fries",
-    
   },
   {
     image: "/images/noodles.jpg",
@@ -148,7 +138,6 @@ export const foodItems = [
     price: 16,
     rating: 4.8,
     category: "Wedges",
-
   },
   {
     image: "/images/noodles.jpg",
@@ -156,7 +145,6 @@ export const foodItems = [
     price: 16,
     rating: 4.8,
     category: "Wedges",
-   
   },
 
   {
@@ -165,10 +153,57 @@ export const foodItems = [
     price: 16,
     rating: 4.8,
     category: "Wedges",
-    
+  },
+  {
+    image: "/images/noodles.jpg",
+    title: "Plain Dosa",
+    price: 100,
+    rating: 4.8,
+    category: "Dosa",
+  },
+  {
+    image: "/images/noodles.jpg",
+    title: "Masala Dosa",
+    price: 130,
+    rating: 4.8,
+    category: "Dosa",
+  },
+  {
+    image: "/images/noodles.jpg",
+    title: "Schezwan Dosa",
+    price: 170,
+    rating: 4.8,
+    category: "Dosa",
+  },
+  {
+    image: "/images/noodles.jpg",
+    title: "Paneer Dosa",
+    price: 200,
+    rating: 4.8,
+    category: "Dosa",
+  },
+  {
+    image: "/images/noodles.jpg",
+    title: "Manchow Soup",
+    price: 150,
+    rating: 4.8,
+    category: "Soup",
+  },
+  {
+    image: "/images/noodles.jpg",
+    title: "Hot & Sour Soup",
+    price: 150,
+    rating: 4.8,
+    category: "Soup",
+  },
+  {
+    image: "/images/noodles.jpg",
+    title: "Lemon Coriander Soup",
+    price: 170,
+    rating: 4.8,
+    category: "Soup",
   },
 ];
-
 
 export const categories = [
   { name: "All", icon: "/images/momo2.jpg" },
@@ -176,4 +211,7 @@ export const categories = [
   { name: "Burgers", icon: "/images/momo2.jpg" },
   { name: "Fries", icon: "/images/momo2.jpg" },
   { name: "Wedges", icon: "/images/momo2.jpg" },
+  { name: "Momos", icon: "/images/momo2.jpg" },
+  { name: "Dosa", icon: "/images/momo2.jpg" },
+  { name: "Soups", icon: "/images/momo2.jpg" },
 ];
