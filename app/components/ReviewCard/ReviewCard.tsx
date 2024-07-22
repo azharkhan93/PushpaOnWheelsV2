@@ -15,7 +15,7 @@ export const ReviewCard: React.FC<ReviewCardprops> = ({
   reviewText,
 }) => {
   return (
-    <div className="w-[334px] lg:w-[380px]  shadow-red-950 rounded-b-3xl rounded-t-3xl rounded-l-lg overflow-hidden"  style={{backgroundColor: "#FF00FF"}}>
+    <div className="bg-white w-[334px] lg:w-[380px]  shadow-red-950 rounded-b-3xl rounded-t-3xl rounded-l-lg overflow-hidden"  >
       <div className="flex flex-col items-center lg:items-start p-2">
         <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-white">
           <Image
@@ -27,7 +27,7 @@ export const ReviewCard: React.FC<ReviewCardprops> = ({
           />
         </div>
         <div className="flex items-center mt-2 flex-col  justify-between rounded-md gap-3">
-          <h1 className="text-1xl text-white">{clientName}</h1>
+          <h1 className="text-1xl text-magenta">{clientName}</h1>
 
           <div className="flex flex-row">
             {[...Array(5)].map((_, i) => (
@@ -36,7 +36,7 @@ export const ReviewCard: React.FC<ReviewCardprops> = ({
           </div>
         </div>
         <div className="flex flex-col items-center mt-4">
-          <blockquote className="text-center text-white italic">
+          <blockquote className="text-center text-magenta italic">
             {reviewText}
           </blockquote>
         </div>

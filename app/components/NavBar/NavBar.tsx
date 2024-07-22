@@ -16,7 +16,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-black flex items-center justify-between px-4 top-0 fixed z-50 w-full" style={{backgroundColor:"#FF00FF"}}>
+    <nav className="bg-magenta flex items-center justify-between px-4 top-0 fixed z-50 w-full" >
       <div className="flex items-center">
         <Image src="/images/push1.png" alt="Logo" width={100} height={50} />
       </div>
@@ -39,10 +39,10 @@ export const Navbar = () => {
       </div>
 
       <div
-        className={`z-50 fixed top-0 left-0 h-[100vh] w-[100vw] bg-black text-white transform ${
+        className={`z-50 fixed top-0 left-0 h-[100vh] w-[100vw] bg-magenta text-white transform ${
           isOpen ? "translate-x-0" : "-translate-x-full" 
         } transition-transform duration-300 ease-in-out flex flex-col justify-center items-center space-y-6`}
-        style={{backgroundColor:"#FF00FF"}}
+        
       >
         <button
           onClick={toggleMenu}

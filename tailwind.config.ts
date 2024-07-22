@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
      
       colors: {
-        magenta: '#FF00FF',
+        magenta: '#722F37',
       }
     },
   },
