@@ -15,7 +15,7 @@ export const Footer = () => {
       <div className="flex items-center flex-col lg:flex-row justify-between gap-8 w-full lg:w-[90%]" >
       <div className="text-center flex-1 space-y-4">
           <h2 className="text-2xl lg:text-3xl font-semibold mb-4">About Company</h2>
-          <p className="text-l w-[100%] mb-4 text-l">We provide a variety of veg foods with a top-notch dining experience.</p>
+          <p className="text-l w-[100%] mb-4 text-l capitalize">We provide a variety of veg foods with a top-notch dining experience.</p>
           <div className="flex justify-center space-x-4">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <FaFacebook className="text-2xl text-white hover:text-gray-400" />
@@ -43,16 +43,16 @@ export const Footer = () => {
         {/* Contact Us */}
         <div className="text-center flex flex-col flex-1 space-y-4 items-center justify-center">
           <h2 className=" text-2xl lg:text-3xl font-semibold mb-4">Contact Us</h2>
-          <p className="text-l mb-2 flex items-center justify-center  gap-4">
-            <MdEmail size={28} fill='white'  /> pushpavegonwheels@gmail.com
-          </p>
+          <a href="mailto:pushpavegonwheels@gmail.com" className="text-l mb-2 flex items-center justify-center gap-4">
+            <MdEmail size={28} fill='white' /> pushpavegonwheels@gmail.com
+          </a>
           
           <p className="text-l mb-2 flex items-center  justify-center  gap-4">
             <MdLocationOn size={28} fill='white' /> 123 Veg Street, Food City gghh
           </p>
-          <p className="text-l mb-2 flex items-center justify-center  gap-4">
-            <MdPhone size={28} fill='white'  /> +91 234 567 89017767887678
-          </p>
+          <a href="tel:+912345678901" className="text-l mb-2 flex items-center justify-center gap-4">
+            <MdPhone size={28} fill='white' /> +91 234 567 8901
+          </a>
         </div>
         
 
