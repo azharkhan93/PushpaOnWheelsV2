@@ -34,21 +34,21 @@ export const foodItems = [
     price: 130,
     rating: 5.0,
     icon: "/images/momo2.jpg",
-    categor: "Momos"
+    category: "Momos"
   },
   {
     image: "/images/momo2.jpg",
     title: "Vegetable Momos",
     price: 100,
     rating: 3.8,
-    categor: "Momos"
+    category: "Momos"
   },
   {
     image: "/images/peri.webp",
-    title: "Peri Peri Momo",
+    title: "Peri Peri Momos",
     price: 200,
     rating: 4.9,
-    categor: "Momos"
+    category: "Momo"
   },
   
   {
@@ -56,9 +56,9 @@ export const foodItems = [
     title: "Malai Paneer Momos",
     price: 250,
     rating: 4.9,
-    categor: "Momos"
+    category: "Momos"
   },
-  { image: "/images/fried.jpg", title: "Fried Momos", price: 160, rating: 4.9, categor: "Momos" },
+  { image: "/images/fried.jpg", title: "Fried Momos", price: 160, rating: 4.9, category: "Momos" },
   {
     image: "/images/noodles.jpg",
     title: "Vegetable Noodles",

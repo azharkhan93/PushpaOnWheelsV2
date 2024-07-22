@@ -19,7 +19,7 @@ export const MenuCard: React.FC<FoodCardProps> = ({ image, title, price, rating 
       <div className="flex items-center justify-between mt-2">
         <div className="flex items-center justify-center gap-1">
         <FaStar className="text-yellow-500 mr-1"  />
-        <span>{rating}</span>
+        <span className='text-white'>{rating}</span>
         </div>
         <div className="flex ">
         <FaShoppingCart size={26} fill='white' className="text-white cursor-pointer" />
