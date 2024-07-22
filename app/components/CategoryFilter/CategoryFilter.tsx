@@ -27,16 +27,16 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({ onFilterChange }
             selectedCategory === name ? 'bg-magenta text-white' : 'bg-magenta'
           }`}
         >
-          <div className="flex items-center justify-center gap-3">
-            <Image 
+          {/* <div className="flex items-center justify-center gap-3"> */}
+            {/* <Image 
               src={icon}
               alt={`${name} icon`}
               width={24}
               height={24}
               className="w-6 h-6 rounded-full"
-            />
+            /> */}
             {name}
-          </div>
+          {/* </div> */}
         </button>
       ))}
     </div>
