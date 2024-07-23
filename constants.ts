@@ -34,31 +34,37 @@ export const foodItems = [
     price: 130,
     rating: 5.0,
     icon: "/images/momo2.jpg",
-    category: "Momos"
+    category: "Momos",
   },
   {
     image: "/images/momo2.jpg",
     title: "Vegetable Momos",
     price: 100,
     rating: 3.8,
-    category: "Momos"
+    category: "Momos",
   },
   {
     image: "/images/peri.webp",
     title: "Peri Peri Momos",
     price: 200,
     rating: 4.9,
-    category: "Momo"
+    category: "Momo",
   },
-  
+
   {
     image: "/images/noodles.jpg",
     title: "Malai Paneer Momos",
     price: 250,
     rating: 4.9,
-    category: "Momos"
+    category: "Momos",
   },
-  { image: "/images/fried.jpg", title: "Fried Momos", price: 160, rating: 4.9, category: "Momos" },
+  {
+    image: "/images/fried.jpg",
+    title: "Fried Momos",
+    price: 160,
+    rating: 4.9,
+    category: "Momos",
+  },
   {
     image: "/images/noodles.jpg",
     title: "Vegetable Noodles",
@@ -67,31 +73,34 @@ export const foodItems = [
   },
   { image: "/images/nod.jpg", title: "Haka Noodles", price: 160, rating: 4.8 },
 
-  { image: "/images/mach.jpg",
-   title: "Manchurian",
+  {
+    image: "/images/mach.jpg",
+    title: "Manchurian",
     price: 200,
-     rating: 4.8,
-     category: "Chinese"
-     },
-     { image: "/images/mach.jpg",
-   title: "Cheese Chilli",
+    rating: 4.8,
+    category: "Chinese",
+  },
+  {
+    image: "/images/mach.jpg",
+    title: "Cheese Chilli",
     price: 250,
-     rating: 4.8,
-     category: "Chinese"
-     },
-     { image: "/images/mach.jpg",
-   title: "Mushroom Chilli",
+    rating: 4.8,
+    category: "Chinese",
+  },
+  {
+    image: "/images/mach.jpg",
+    title: "Mushroom Chilli",
     price: 250,
-     rating: 4.8,
-     category: "Chinese"
-     },
+    rating: 4.8,
+    category: "Chinese",
+  },
   {
     image: "/images/cheese.jpg",
     title: "Mushroom Chilli",
 
     price: 16,
     rating: 4.8,
-    category: "Chinese"
+    category: "Chinese",
   },
   {
     image: "/images/fried.jpg",
@@ -100,7 +109,7 @@ export const foodItems = [
     rating: 4.8,
     category: "Chinese",
   },
-  
+
   {
     image: "/images/noodles.jpg",
     title: "Garlic Noodles",
@@ -143,7 +152,6 @@ export const foodItems = [
     rating: 4.8,
     category: "Fries",
   },
-  
 
   {
     image: "/images/noodles.jpg",
@@ -259,35 +267,35 @@ export const foodItems = [
     category: "Roti",
   },
   {
-    image: "/images/noodles.jpg",
+    image: "/images/masala tea.jpeg",
     title: "Masala Tea",
     price: 50,
     rating: 4.8,
     category: "Beverages",
   },
   {
-    image: "/images/noodles.jpg",
+    image: "/images/lassi.webp",
     title: "Lassi",
     price: 80,
     rating: 4.8,
     category: "Beverages",
   },
   {
-    image: "/images/noodles.jpg",
+    image: "/images/water3.jpg",
     title: "Water",
     price: 30,
     rating: 4.8,
     category: "Beverages",
   },
   {
-    image: "/images/noodles.jpg",
+    image: "/images/cold drink.jpg",
     title: "Cold Drink",
     price: 50,
     rating: 4.8,
     category: "Beverages",
   },
   {
-    image: "/images/noodles.jpg",
+    image: "/images/mojito.jpg",
     title: "Mojitos",
     price: 150,
     rating: 4.8,
