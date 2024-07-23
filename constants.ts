@@ -66,13 +66,39 @@ export const foodItems = [
     rating: 5.0,
   },
   { image: "/images/nod.jpg", title: "Haka Noodles", price: 160, rating: 4.8 },
-  { image: "/images/mach.jpg", title: "Manchurian", price: 16, rating: 4.8 },
+
+  { image: "/images/mach.jpg",
+   title: "Manchurian",
+    price: 200,
+     rating: 4.8,
+     category: "Chinese"
+     },
+     { image: "/images/mach.jpg",
+   title: "Cheese Chilli",
+    price: 250,
+     rating: 4.8,
+     category: "Chinese"
+     },
+     { image: "/images/mach.jpg",
+   title: "Mushroom Chilli",
+    price: 250,
+     rating: 4.8,
+     category: "Chinese"
+     },
   {
     image: "/images/cheese.jpg",
     title: "Mushroom Chilli",
 
     price: 16,
     rating: 4.8,
+    category: "Chinese"
+  },
+  {
+    image: "/images/fried.jpg",
+    title: "Fried Rice",
+    price: 160,
+    rating: 4.8,
+    category: "Chinese",
   },
   { image: "/images/fried.jpg", title: "Fried Rice", price: 16, rating: 4.8 },
   {
@@ -85,64 +111,65 @@ export const foodItems = [
   {
     image: "/images/noodles.jpg",
     title: "Aloo Tiki Burger",
-    price: 16,
+    price: 170,
     rating: 4.8,
     category: "Burgers",
   },
   {
     image: "/images/noodles.jpg",
     title: "Double Decker Burger",
-    price: 16,
+    price: 250,
     rating: 4.8,
     category: "Burgers",
   },
   {
     image: "/images/noodles.jpg",
     title: "Cheese Burger",
-    price: 16,
+    price: 300,
     rating: 4.8,
     category: "Burgers",
   },
   {
     image: "/images/noodles.jpg",
     title: "Double Cheese Slice",
-    price: 16,
+    price: 150,
     rating: 4.8,
     category: "Burgers",
   },
   {
     image: "/images/noodles.jpg",
     title: "Plain Fries",
-    price: 16,
+    price: 130,
     rating: 4.8,
     category: "Fries",
   },
-  {
-    image: "/images/fried.jpg",
-    title: "Fried Rice",
-    price: 16,
-    rating: 4.8,
-    category: "Fries",
-  },
+  
 
   {
     image: "/images/noodles.jpg",
     title: "Cheese Fries",
-    price: 16,
+    price: 200,
+    rating: 4.8,
+    category: "Fries",
+  },
+  {
+    image: "/images/noodles.jpg",
+    title: "Peri Peri Fries",
+    price: 150,
     rating: 4.8,
     category: "Fries",
   },
   {
     image: "/images/noodles.jpg",
     title: "Plain Wedges",
-    price: 16,
+    price: 200,
     rating: 4.8,
     category: "Wedges",
   },
   {
     image: "/images/noodles.jpg",
     title: "Peri Peri Wedges",
-    price: 16,
+    price: 250,
     rating: 4.8,
     category: "Wedges",
   },
@@ -150,7 +177,7 @@ export const foodItems = [
   {
     image: "/images/noodles.jpg",
     title: "Cheese Wedges",
-    price: 16,
+    price: 300,
     rating: 4.8,
     category: "Wedges",
   },
@@ -203,6 +230,27 @@ export const foodItems = [
     rating: 4.8,
     category: "Soup",
   },
+  {
+    image: "/images/noodles.jpg",
+    title: "Rajma Rice",
+    price: 150,
+    rating: 4.8,
+    category: "Rice",
+  },
+  {
+    image: "/images/noodles.jpg",
+    title: "Sambhar Rice",
+    price: 150,
+    rating: 4.8,
+    category: "Rice",
+  },
+  {
+    image: "/images/noodles.jpg",
+    title: "Channa Rice",
+    price: 150,
+    rating: 4.8,
+    category: "Rice",
+  },
 ];
 
 export const categories = [
@@ -214,4 +262,6 @@ export const categories = [
   { name: "Momos", icon: "/images/momo2.jpg" },
   { name: "Dosa", icon: "/images/momo2.jpg" },
   { name: "Soups", icon: "/images/momo2.jpg" },
+  { name: "Chinese", icon: "/images/momo2.jpg" },
+  { name: "Rice", icon: "/images/momo2.jpg" },
 ];
