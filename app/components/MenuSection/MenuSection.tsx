@@ -31,7 +31,7 @@ export const MenuSection = () => {
           vegetarian foods
         </p>
         <CategoryFilter onFilterChange={handleProductsChange} />
-        <div className="flex items-center justify-center flex-wrap flex-row   gap-6 reveal reveal-from-top" >
+        <div className="flex items-center justify-center flex-wrap flex-row   gap-6  " >
           {filterItems.map((item, index) => (
             <MenuCard
               key={index}

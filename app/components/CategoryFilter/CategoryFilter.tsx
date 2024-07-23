@@ -18,7 +18,7 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({ onFilterChange }
   };
 
   return (
-    <div className="mb-4 flex items-center justify-center gap-5 flex-wrap  lg:flex-nowrap ">
+    <div className="mb-4 flex items-center justify-center gap-5 flex-wrap max-w-[1300px] reveal reveal-from-right ">
       {categories.map(({ name, icon }) => (
         <button
           key={name}

@@ -5,8 +5,15 @@ export const AboutSection = () => {
     <div
       id="About"
       className="flex items-center justify-center py-24 w-[100%] bg-magenta"
+      //   style={{
+      //    backgroundImage: "url('/images/ks4.png')",
+      //    backgroundSize: "cover",
+      //   backgroundPosition: "center",
+      //    backgroundRepeat: "no-repeat",
+      //  }}
       
     >
+       
       <div className="flex items-center justify-between w-[95%] flex-col-reverse md:flex-row gap-8">
         <div className="border-red-300 rounded-lg  text-white">
           <div className="relative flex items-start justify-center  flex-wrap gap-4 reveal reveal-from-left">
@@ -46,7 +53,7 @@ export const AboutSection = () => {
           </p>
           <a href="#menu">
             <button className="bg-black hover:bg-gray-950 text-white py-2 px-11  rounded-r-3xl rounded-b-3xl border-2 border-white">
-              Explore it
+              Explore Now
             </button>
           </a>
         </div>
