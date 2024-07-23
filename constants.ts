@@ -100,7 +100,7 @@ export const foodItems = [
     rating: 4.8,
     category: "Chinese",
   },
-  { image: "/images/fried.jpg", title: "Fried Rice", price: 16, rating: 4.8 },
+  
   {
     image: "/images/noodles.jpg",
     title: "Garlic Noodles",
@@ -251,6 +251,13 @@ export const foodItems = [
     rating: 4.8,
     category: "Rice",
   },
+  {
+    image: "/images/noodles.jpg",
+    title: "Tawa Roti",
+    price: 150,
+    rating: 4.8,
+    category: "Roti",
+  },
 ];
 
 export const categories = [
@@ -261,7 +268,8 @@ export const categories = [
   { name: "Wedges", icon: "/images/momo2.jpg" },
   { name: "Momos", icon: "/images/momo2.jpg" },
   { name: "Dosa", icon: "/images/momo2.jpg" },
-  { name: "Soups", icon: "/images/momo2.jpg" },
+  { name: "Soup", icon: "/images/momo2.jpg" },
   { name: "Chinese", icon: "/images/momo2.jpg" },
   { name: "Rice", icon: "/images/momo2.jpg" },
+  { name: "Roti", icon: "/images/momo2.jpg" },
 ];
