@@ -258,6 +258,41 @@ export const foodItems = [
     rating: 4.8,
     category: "Roti",
   },
+  {
+    image: "/images/noodles.jpg",
+    title: "Masala Tea",
+    price: 50,
+    rating: 4.8,
+    category: "Beverages",
+  },
+  {
+    image: "/images/noodles.jpg",
+    title: "Lassi",
+    price: 80,
+    rating: 4.8,
+    category: "Beverages",
+  },
+  {
+    image: "/images/noodles.jpg",
+    title: "Water",
+    price: 30,
+    rating: 4.8,
+    category: "Beverages",
+  },
+  {
+    image: "/images/noodles.jpg",
+    title: "Cold Drink",
+    price: 50,
+    rating: 4.8,
+    category: "Beverages",
+  },
+  {
+    image: "/images/noodles.jpg",
+    title: "Mojitos",
+    price: 150,
+    rating: 4.8,
+    category: "Beverages",
+  },
 ];
 
 export const categories = [
@@ -272,4 +307,5 @@ export const categories = [
   { name: "Chinese", icon: "/images/momo2.jpg" },
   { name: "Rice", icon: "/images/momo2.jpg" },
   { name: "Roti", icon: "/images/momo2.jpg" },
+  { name: "Beverages", icon: "/images/momo2.jpg" },
 ];
