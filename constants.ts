@@ -146,7 +146,7 @@ export const foodItems = [
     category: "Burgers",
   },
   {
-    image: "/images/noodles.jpg",
+    image: "/images/peri.jpg",
     title: "Plain Fries",
     price: 130,
     rating: 4.8,
@@ -154,14 +154,14 @@ export const foodItems = [
   },
 
   {
-    image: "/images/noodles.jpg",
+    image: "/images/ch.jpg",
     title: "Cheese Fries",
     price: 200,
     rating: 4.8,
     category: "Fries",
   },
   {
-    image: "/images/noodles.jpg",
+    image: "/images/fries2.jpg",
     title: "Peri Peri Fries",
     price: 150,
     rating: 4.8,
@@ -260,7 +260,7 @@ export const foodItems = [
     category: "Rice",
   },
   {
-    image: "/images/noodles.jpg",
+    image: "/images/roti2.jpg",
     title: "Tawa Roti",
     price: 150,
     rating: 4.8,
