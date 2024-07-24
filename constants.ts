@@ -29,7 +29,7 @@ export const reviews = [
 
 export const foodItems = [
   {
-    image: "/images/cheese.jpg",
+    image: "/images/p1.jpeg",
     title: "Paneer Momos",
     price: 130,
     rating: 5.0,
@@ -59,7 +59,7 @@ export const foodItems = [
     category: "Momos",
   },
   {
-    image: "/images/fried.jpg",
+    image: "/images/fr.jpg",
     title: "Fried Momos",
     price: 160,
     rating: 4.9,
@@ -74,36 +74,29 @@ export const foodItems = [
   { image: "/images/nod.jpg", title: "Haka Noodles", price: 160, rating: 4.8 },
 
   {
-    image: "/images/mach.jpg",
+    image: "/images/mn.jpg",
     title: "Manchurian",
     price: 200,
     rating: 4.8,
     category: "Chinese",
   },
   {
-    image: "/images/mach.jpg",
+    image: "/images/chillar.jpg",
     title: "Cheese Chilli",
     price: 250,
     rating: 4.8,
     category: "Chinese",
   },
   {
-    image: "/images/mach.jpg",
+    image: "/images/mushroom.jpg",
     title: "Mushroom Chilli",
     price: 250,
     rating: 4.8,
     category: "Chinese",
   },
+  
   {
-    image: "/images/cheese.jpg",
-    title: "Mushroom Chilli",
-
-    price: 16,
-    rating: 4.8,
-    category: "Chinese",
-  },
-  {
-    image: "/images/fried.jpg",
+    image: "/images/rico.jpg",
     title: "Fried Rice",
     price: 160,
     rating: 4.8,
@@ -168,14 +161,14 @@ export const foodItems = [
     category: "Fries",
   },
   {
-    image: "/images/noodles.jpg",
+    image: "/images/wd.jpg",
     title: "Plain Wedges",
     price: 200,
     rating: 4.8,
     category: "Wedges",
   },
   {
-    image: "/images/noodles.jpg",
+    image: "/images/perwedge.jpg",
     title: "Peri Peri Wedges",
     price: 250,
     rating: 4.8,
@@ -183,7 +176,7 @@ export const foodItems = [
   },
 
   {
-    image: "/images/noodles.jpg",
+    image: "/images/wedge1.jpg",
     title: "Cheese Wedges",
     price: 300,
     rating: 4.8,
@@ -218,42 +211,42 @@ export const foodItems = [
     category: "Dosa",
   },
   {
-    image: "/images/noodles.jpg",
+    image: "/images/man.jpg",
     title: "Manchow Soup",
     price: 150,
     rating: 4.8,
     category: "Soup",
   },
   {
-    image: "/images/noodles.jpg",
+    image: "/images/hot.jpg",
     title: "Hot & Sour Soup",
     price: 150,
     rating: 4.8,
     category: "Soup",
   },
   {
-    image: "/images/noodles.jpg",
+    image: "/images/lemon.jpg",
     title: "Lemon Coriander Soup",
     price: 170,
     rating: 4.8,
     category: "Soup",
   },
   {
-    image: "/images/noodles.jpg",
+    image: "/images/rajma.jpg",
     title: "Rajma Rice",
     price: 150,
     rating: 4.8,
     category: "Rice",
   },
   {
-    image: "/images/noodles.jpg",
+    image: "/images/sambhar.jpg",
     title: "Sambhar Rice",
     price: 150,
     rating: 4.8,
     category: "Rice",
   },
   {
-    image: "/images/noodles.jpg",
+    image: "/images/riv.jpg",
     title: "Channa Rice",
     price: 150,
     rating: 4.8,
