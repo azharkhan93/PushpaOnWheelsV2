@@ -83,22 +83,26 @@ export const MenuSection = () => {
         foods.
       </p>
       <CategoryFilter onFilterChange={handleProductsChange} />
-      <div className="flex items-center justify-center flex-wrap flex-row gap-6">
-        {filterItems.map((item, index) => (
-          <MenuCard
-            key={index}
-            image={item.image}
-            title={item.title}
-            price={item.price}
-            rating={item.rating}
-          />
-        ))}
-        <div ref={lastItemRef} className="w-full flex justify-center">
-          {isLoading && hasMoreItems && (
-            <FaSpinner className="text-white text-4xl lg:text-5xl animate-spin" />
-          )}
-        </div>
-      </div>
+      <div className="flex flex-wrap justify-center gap-3 lg:gap-6">
+  {filterItems.map((item, index) => (
+    <div
+      key={index}
+      className=" w-[46%] lg:w-1/5 "
+    >
+      <MenuCard
+        image={item.image}
+        title={item.title}
+        price={item.price}
+        rating={item.rating}
+      />
+    </div>
+  ))}
+  <div ref={lastItemRef} className="w-full flex justify-center">
+    {isLoading && hasMoreItems && (
+      <FaSpinner className="text-white text-4xl lg:text-5xl animate-spin" />
+    )}
+  </div>
+</div>
     </div>
   );
 };

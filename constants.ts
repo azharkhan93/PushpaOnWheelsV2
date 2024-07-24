@@ -117,13 +117,7 @@ export const foodItems = [
     rating: 4.8,
     category: "Burgers",
   },
-  {
-    image: "/images/decker.jpg",
-    title: "Double Decker Burger",
-    price: 250,
-    rating: 4.8,
-    category: "Burgers",
-  },
+  
   {
     image: "/images/burger3.jpg",
     title: "Cheese Burger",
@@ -131,6 +125,7 @@ export const foodItems = [
     rating: 4.8,
     category: "Burgers",
   },
+  
   {
     image: "/images/burger3.jpg",
     title: "Double Cheese Slice",
@@ -224,20 +219,22 @@ export const foodItems = [
     rating: 4.8,
     category: "Soup",
   },
+  
   {
-    image: "/images/lemon.jpg",
+    image: "/images/decker.jpg",
+    title: "Double Decker Burger",
+    price: 250,
+    rating: 4.8,
+    category: "Burgers",
+  },
+  {
+    image: "/images/lk.webp",
     title: "Lemon Coriander Soup",
     price: 170,
     rating: 4.8,
     category: "Soup",
   },
-  {
-    image: "/images/rajma.jpg",
-    title: "Rajma Rice",
-    price: 150,
-    rating: 4.8,
-    category: "Rice",
-  },
+  
   {
     image: "/images/sambhar.jpg",
     title: "Sambhar Rice",
@@ -246,19 +243,20 @@ export const foodItems = [
     category: "Rice",
   },
   {
+    image: "/images/phulka.webp",
+    title: "Tawa Roti",
+    price: 150,
+    rating: 4.8,
+    category: "Roti",
+  },
+  {
     image: "/images/riv.jpg",
     title: "Channa Rice",
     price: 150,
     rating: 4.8,
     category: "Rice",
   },
-  {
-    image: "/images/roti2.jpg",
-    title: "Tawa Roti",
-    price: 150,
-    rating: 4.8,
-    category: "Roti",
-  },
+  
   {
     image: "/images/masala tea.jpeg",
     title: "Masala Tea",
@@ -293,6 +291,13 @@ export const foodItems = [
     price: 150,
     rating: 4.8,
     category: "Beverages",
+  },
+  {
+    image: "/images/rajma.jpg",
+    title: "Rajma Rice",
+    price: 150,
+    rating: 4.8,
+    category: "Rice",
   },
 ];
 
