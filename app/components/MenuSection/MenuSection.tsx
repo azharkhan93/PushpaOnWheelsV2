@@ -1,4 +1,4 @@
-"use client"
+"use client";
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { MenuCard } from "../MenuCard";
@@ -9,15 +9,22 @@ import { FaSpinner } from "react-icons/fa";
 const ITEMS_PER_PAGE = 10;
 
 export const MenuSection = () => {
-  const [filterItems, setFilteredItems] = useState(foodItems.slice(0, ITEMS_PER_PAGE));
+  const [filterItems, setFilteredItems] = useState(
+    foodItems.slice(0, ITEMS_PER_PAGE)
+  );
   const [currentPage, setCurrentPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
-  const [hasMoreItems, setHasMoreItems] = useState(foodItems.length > ITEMS_PER_PAGE);
+  const [hasMoreItems, setHasMoreItems] = useState(
+    foodItems.length > ITEMS_PER_PAGE
+  );
   const observer = useRef<IntersectionObserver | null>(null);
   const lastItemRef = useRef<HTMLDivElement | null>(null);
 
   const handleProductsChange = (category: string) => {
-    const filtered = category === "All" ? foodItems : foodItems.filter(item => item.category === category);
+    const filtered =
+      category === "All"
+        ? foodItems
+        : foodItems.filter((item) => item.category === category);
     setFilteredItems(filtered.slice(0, ITEMS_PER_PAGE));
     setCurrentPage(1);
     setHasMoreItems(filtered.length > ITEMS_PER_PAGE);
@@ -32,13 +39,13 @@ export const MenuSection = () => {
       const nextPage = currentPage + 1;
       const startIndex = nextPage * ITEMS_PER_PAGE - ITEMS_PER_PAGE;
       const newItems = foodItems.slice(startIndex, nextPage * ITEMS_PER_PAGE);
-      setFilteredItems(prevItems => [...prevItems, ...newItems]);
+      setFilteredItems((prevItems) => [...prevItems, ...newItems]);
       setCurrentPage(nextPage);
       setIsLoading(false);
       if (newItems.length < ITEMS_PER_PAGE) {
         setHasMoreItems(false);
       }
-    }, 1000); // Simulate loading delay of 1 second
+    }, 1000);
   }, [currentPage, isLoading, hasMoreItems]);
 
   useEffect(() => {
@@ -61,14 +68,19 @@ export const MenuSection = () => {
   }, [loadMoreItems, isLoading]);
 
   return (
-    <div id="Menu" className="flex items-center justify-center flex-col py-20 bg-black gap-6">
+    <div
+      id="Menu"
+      className="flex items-center justify-center flex-col py-20 bg-black gap-6"
+    >
       <h2 className="text-4xl lg:text-5xl font-semibold text-white text-start reveal reveal-from-left">
         Explore Our <span className="text-magenta">Menu</span>
       </h2>
       <div className="w-[200px] h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded-md"></div>
       <p className="text-lg text-white mb-6 lg:w-[50%] w-[80%] capitalize reveal reveal-from-left">
-        Discover our <span className="text-magenta capitalize">exclusive Menu</span>{" "}
-        and enjoy a top-notch dining experience. We offer a variety of vegetarian foods.
+        Discover our{" "}
+        <span className="text-magenta capitalize">exclusive Menu</span> and
+        enjoy a top-notch dining experience. We offer a variety of vegetarian
+        foods.
       </p>
       <CategoryFilter onFilterChange={handleProductsChange} />
       <div className="flex items-center justify-center flex-wrap flex-row gap-6">
@@ -83,13 +95,10 @@ export const MenuSection = () => {
         ))}
         <div ref={lastItemRef} className="w-full flex justify-center">
           {isLoading && hasMoreItems && (
-            <FaSpinner className="text-magenta text-4xl lg:text-5xl animate-spin" />
+            <FaSpinner className="text-white text-4xl lg:text-5xl animate-spin" />
           )}
         </div>
       </div>
     </div>
   );
 };
-
-
-
