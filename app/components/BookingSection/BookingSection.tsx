@@ -1,59 +1,67 @@
-"use client"
-import React from 'react';
-import Image from 'next/image';
-import { Formik, Form, Field, ErrorMessage, FormikHelpers } from 'formik';
-import * as Yup from 'yup';
-import axios from 'axios';
-import Swal from 'sweetalert2';
+"use client";
+import React from "react";
+import Image from "next/image";
+import { Formik, Form, FormikHelpers, ErrorMessage, Field } from "formik";
+import * as Yup from "yup";
+import axios from "axios";
+import Swal from "sweetalert2";
+import { API_URL } from "@/constants";
+import { InputField } from "../InputField";
+
 
 type BookingFormValues = {
   name: string;
   email: string;
-  date: string; 
+  date: string;
   time: string;
   message?: string;
   phoneNumber: number | string;
-}
+};
 
 const initialValues: BookingFormValues = {
-  name: '',
-  email: '',
-  date: '',
-  time: '',
-  message: '',
-  phoneNumber: '',
+  name: "",
+  email: "",
+  date: "",
+  time: "",
+  message: "",
+  phoneNumber: "",
 };
 
 const validationSchema = Yup.object().shape({
-  name: Yup.string().required('Name is required'),
-  email: Yup.string().email('Invalid email').required('Email is required'),
-  date: Yup.date().required('Date is required'),
-  time: Yup.string().required('Time is required'),
+  name: Yup.string().required("Name is required"),
+  email: Yup.string().email("Invalid email").required("Email is required"),
+  date: Yup.date().required("Date is required"),
+  time: Yup.string().required("Time is required"),
   message: Yup.string(),
-  phoneNumber: Yup.string().matches(/^[0-9]+$/, 'Must be only digits').required('Phone number is required'),
+  phoneNumber: Yup.string()
+    .matches(/^[0-9]+$/, "Must be only digits")
+    .required("Phone number is required"),
 });
 
 interface BookingSectionProps {}
 
 export const BookingSection: React.FC<BookingSectionProps> = () => {
-  const handleSubmit = async (values: BookingFormValues, { setSubmitting, resetForm }: FormikHelpers<BookingFormValues>) => {
+  const handleSubmit = async (
+    values: BookingFormValues,
+    { setSubmitting, resetForm }: FormikHelpers<BookingFormValues>
+  ) => {
     try {
-      const response = await axios.post("/api/booking", values);
+      const response = await axios.post(API_URL, values);
       if (response.status === 200) {
         Swal.fire({
-          icon: 'success',
-          title: 'Booking request sent',
+          icon: "success",
+          title: "Booking request sent",
           showConfirmButton: false,
-          timer: 1500
+          timer: 1500,
         });
         resetForm();
       }
     } catch (error) {
       console.log(error);
       Swal.fire({
-        icon: 'error',
-        title: 'Failed to send booking request',
-        text: 'Please try again later.',
+        icon: "error",
+        title: "Failed to send booking request",
+        text: "Please try again later.",
       });
     } finally {
       setSubmitting(false);
@@ -61,75 +69,50 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
   };
 
   return (
-    <div id="Booking" className="flex items-center justify-center flex-col min-h-screen bg-magenta py-6 w-full gap-3">
-      <h2 className="text-4xl lg:text-5xl text-white text-start mt-8">Terrace Booking Form</h2>
+    <div
+      id="Booking"
+      className="flex items-center justify-center flex-col min-h-screen bg-magenta py-6 w-full gap-3"
+    >
+      <h2 className="text-4xl lg:text-5xl text-white text-start mt-8">
+        Terrace Booking Form
+      </h2>
       <div className="w-[200px] h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded-md"></div>
       <p className="text-lg text-white mb-6 w-[80%] lg:w-[50%] font-quicksand capitalize">
-        Fill out the form below to book a table at our restaurant. We offer a variety of vegetarian foods and a top-notch dining experience.
+        Fill out the form below to book a table at our restaurant. We offer a
+        variety of vegetarian foods and a top-notch dining experience.
       </p>
       <div className="w-[92%] lg:w-[80%] overflow-hidden flex items-center shadow-slate-950">
         <div className="lg:w-[800px] h-[500px] relative shadow-slate-950 rounded-lg ">
-          <Image src="/images/veg.jpg" alt="Booking Image" layout="fill" objectFit="cover" className="rounded-md shadow-slate-950" />
+          <Image
+            src="/images/veg.jpg"
+            alt="Booking Image"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-md shadow-slate-950"
+          />
         </div>
         <div className="w-[650px] p-8 border-3 bg-black rounded-l-3xl ">
-          <h2 className="text-2xl font-semibold text-white mb-4">Enter Your Details</h2>
-          <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
+          <h2 className="text-2xl font-semibold text-white mb-4">
+            Enter Your Details
+          </h2>
+          <Formik
+            initialValues={initialValues}
+            validationSchema={validationSchema}
+            onSubmit={handleSubmit}
+          >
             {({ isSubmitting }) => (
               <Form>
-                <div className="mb-4">
-                  <label htmlFor="name" className="block text-white">Name</label>
-                  <Field
-                    type="text"
-                    id="name"
-                    name="name"
-                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  />
-                  <ErrorMessage name="name" component="div" className="text-red-500 text-sm mt-1" />
-                </div>
-                <div className="mb-4">
-                  <label htmlFor="phoneNumber" className="block text-white">Phone Number</label>
-                  <Field
-                    type="number"
-                    id="phoneNumber"
-                    name="phoneNumber"
-                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  />
-                  <ErrorMessage name="phoneNumber" component="div" className="text-red-500 text-sm mt-1" />
-                </div>
-                <div className="mb-4">
-                  <label htmlFor="email" className="block text-white">Email</label>
-                  <Field
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  />
-                  <ErrorMessage name="email" component="div" className="text-red-500 text-sm mt-1" />
-                </div>
+                <InputField label="Name" name="name" type="text" />
+                <InputField label="Phone Number" name="phoneNumber" type="number" />
+                <InputField  label="Email" name="email" type="email" />
                 <div className="flex justify-between">
-                  <div className="mb-4">
-                    <label htmlFor="date" className="block text-white">Date</label>
-                    <Field
-                      type="date"
-                      id="date"
-                      name="date"
-                      className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                    <ErrorMessage name="date" component="div" className="text-red-500 text-sm mt-1" />
-                  </div>
-                  <div className="mb-4">
-                    <label htmlFor="time" className="block text-white">Time</label>
-                    <Field
-                      type="time"
-                      id="time"
-                      name="time"
-                      className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                    <ErrorMessage name="time" component="div" className="text-red-500 text-sm mt-1" />
-                  </div>
+                  <InputField  label="Date" name="date" type="date" />
+                  <InputField label="Time" name="time" type="time" />
                 </div>
                 <div className="mb-4">
-                  <label htmlFor="message" className="block text-white">Message</label>
+                  <label htmlFor="message" className="block text-white">
+                    Message
+                  </label>
                   <Field
                     as="textarea"
                     id="message"
@@ -143,7 +126,7 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
                   className="w-full bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-950 focus:outline-none focus:ring-2 focus:ring-white rounded-r-3xl rounded-b-3xl border-2 border-white"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? 'Submitting...' : 'Submit'}
+                  {isSubmitting ? "Submitting..." : "Submit"}
                 </button>
               </Form>
             )}
@@ -153,12 +136,4 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
     </div>
   );
 };
-
-
-
-
-
-
-
-
 

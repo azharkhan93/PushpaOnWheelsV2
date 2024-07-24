@@ -310,3 +310,6 @@ export const categories = [
   { name: "Roti", icon: "/images/momo2.jpg" },
   { name: "Beverages", icon: "/images/momo2.jpg" },
 ];
+
+
+export const API_URL: string = "/api/booking";
