@@ -17,7 +17,7 @@ export const Footer = () => {
 
       <hr className="w-full  bg-white" />
 
-      <div className="flex items-center flex-col lg:flex-row justify-between gap-8 w-full lg:w-[90%]">
+      <div className="flex  items-center flex-col lg:flex-row justify-between gap-8 w-full lg:w-[90%]">
         <div className="text-center flex-1 space-y-4">
           <h2 className="text-2xl lg:text-3xl font-semibold mb-4">
             About Company
