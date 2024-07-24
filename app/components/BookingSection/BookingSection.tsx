@@ -7,7 +7,7 @@ import axios from "axios";
 import Swal from "sweetalert2";
 import { API_URL } from "@/constants";
 import { InputField } from "../InputField";
-
+import { FaSpinner } from "react-icons/fa";
 
 type BookingFormValues = {
   name: string;
@@ -104,9 +104,9 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
               <Form>
                 <InputField label="Name" name="name" type="text" />
                 <InputField label="Phone Number" name="phoneNumber" type="number" />
-                <InputField  label="Email" name="email" type="email" />
+                <InputField label="Email" name="email" type="email" />
                 <div className="flex justify-between">
-                  <InputField  label="Date" name="date" type="date" />
+                  <InputField label="Date" name="date" type="date" />
                   <InputField label="Time" name="time" type="time" />
                 </div>
                 <div className="mb-4">
@@ -123,10 +123,10 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-950 focus:outline-none focus:ring-2 focus:ring-white rounded-r-3xl rounded-b-3xl border-2 border-white"
+                  className="w-full bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-950 focus:outline-none focus:ring-2 focus:ring-white rounded-r-3xl rounded-b-3xl border-2 border-white flex justify-center items-center"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? "Submitting..." : "Submit"}
+                  {isSubmitting ? <FaSpinner size={20} className="animate-spin" /> : "Submit"}
                 </button>
               </Form>
             )}
@@ -136,4 +136,5 @@ export const BookingSection: React.FC<BookingSectionProps> = () => {
     </div>
   );
 };
+
 
