@@ -52,7 +52,7 @@ export const foodItems = [
   },
 
   {
-    image: "/images/noodles.jpg",
+    image: "/images/peri.webp",
     title: "Malai Paneer Momos",
     price: 250,
     rating: 4.9,
@@ -70,8 +70,9 @@ export const foodItems = [
     title: "Vegetable Noodles",
     price: 100,
     rating: 5.0,
+    category: "Noodles",
   },
-  { image: "/images/nod.jpg", title: "Haka Noodles", price: 160, rating: 4.8 },
+  { image: "/images/noodles.jpg", title: "Haka Noodles", price: 160, rating: 4.8, category: "Noodles", },
 
   {
     image: "/images/mn.jpg",
@@ -334,6 +335,55 @@ export const foodItems = [
     rating: 4.8,
     category: "Paratha",
   },
+  {
+    image: "/images/kathi.jpg",
+    title: "Vegetable",
+    price: 150,
+    rating: 4.8,
+    category: "Kathi Roll",
+  },
+  {
+    image: "/images/kathi2.jpg",
+    title: "Paneer",
+    price: 200,
+    rating: 4.8,
+    category: "Kathi Roll",
+  },
+  {
+    image: "/images/kathi.jpg",
+    title: "Paneer Schezwzan",
+    price: 250,
+    rating: 4.8,
+    category: "Kathi Roll",
+  },
+  {
+    image: "/images/sandwich.jpg",
+    title: "Mushroom Schezwzan",
+    price: 300,
+    rating: 4.8,
+    category: "Kathi Roll",
+  },
+  {
+    image: "/images/sandwich.jpg",
+    title: "Plain Sandwich",
+    price: 80,
+    rating: 4.8,
+    category: "Main Course",
+  },
+  {
+    image: "/images/sandwich.jpg",
+    title: "Cheese Corn Sandwich",
+    price: 160,
+    rating: 4.8,
+    category: "Main Course",
+  },
+  {
+    image: "/images/sandwich.jpg",
+    title: "Grilled Veg Sandwich",
+    price: 160,
+    rating: 4.8,
+    category: "Main Course",
+  },
 ];
 
 export const categories = [
@@ -350,6 +400,8 @@ export const categories = [
   { name: "Roti", icon: "/images/momo2.jpg" },
   { name: "Beverages", icon: "/images/momo2.jpg" },
   { name: "Paratha", icon: "/images/momo2.jpg" },
+  { name: "Kathi Roll", icon: "/images/momo2.jpg" },
+  { name: "Main Course", icon: "/images/momo2.jpg" },
 ];
 
 
