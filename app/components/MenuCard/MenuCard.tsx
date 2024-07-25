@@ -12,10 +12,10 @@ export const MenuCard: React.FC<FoodCardProps> = ({ image, title, price, rating 
   return (
     <div className="shadow-lg p-4 rounded-l-3xl bg-magenta">
       <div className="flex justify-between items-center mb-4">
-        <Image src={image} alt={title} width={87} height={87} className="rounded-full" />
-        <div className="text-lg font-bold text-white">₹{price}</div>
+        <Image src={image} alt={title} width={87} height={70} className="rounded-full" />
+        <div className="text-l font-bold text-white">₹{price}</div>
       </div>
-      <h3 className="lg:text-xl lg:font-semibold text-white">{title}</h3>
+      <h3 className="lg:text-l lg:font-semibold text-white">{title}</h3>
       <div className="flex items-center justify-between mt-2">
         <div className="flex items-center gap-1">
           <FaStar className="text-yellow-500" />

@@ -83,11 +83,11 @@ export const MenuSection = () => {
         foods.
       </p>
       <CategoryFilter onFilterChange={handleProductsChange} />
-      <div className="flex flex-wrap justify-center gap-3 lg:gap-6">
+      <div className="flex flex-wrap justify-center gap-3 lg:gap-6 px-2 lg:px-5">
   {filterItems.map((item, index) => (
     <div
       key={index}
-      className=" w-[46%] lg:w-1/5 "
+      className=" w-[48%] lg:w-[200px] "
     >
       <MenuCard
         image={item.image}

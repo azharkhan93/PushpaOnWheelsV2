@@ -249,6 +249,13 @@ export const foodItems = [
     rating: 4.8,
     category: "Roti",
   },
+  // {
+  //   image: "/images/phulka.webp",
+  //   title: "Plain Roti",
+  //   price: 50,
+  //   rating: 4.8,
+  //   category: "Roti",
+  // },
   {
     image: "/images/riv.jpg",
     title: "Channa Rice",
@@ -299,6 +306,34 @@ export const foodItems = [
     rating: 4.8,
     category: "Rice",
   },
+  {
+    image: "/images/paratha.jpg",
+    title: "Aloo Paratha",
+    price: 100,
+    rating: 4.8,
+    category: "Paratha",
+  },
+  {
+    image: "/images/paratha.jpg",
+    title: "Gobi Paratha",
+    price: 120,
+    rating: 4.8,
+    category: "Paratha",
+  },
+  {
+    image: "/images/paratha.jpg",
+    title: "Mix Paratha",
+    price: 150,
+    rating: 4.8,
+    category: "Paratha",
+  },
+  {
+    image: "/images/paratha.jpg",
+    title: "paneer Paratha",
+    price: 180,
+    rating: 4.8,
+    category: "Paratha",
+  },
 ];
 
 export const categories = [
@@ -314,6 +349,7 @@ export const categories = [
   { name: "Rice", icon: "/images/momo2.jpg" },
   { name: "Roti", icon: "/images/momo2.jpg" },
   { name: "Beverages", icon: "/images/momo2.jpg" },
+  { name: "Paratha", icon: "/images/momo2.jpg" },
 ];
 
 
