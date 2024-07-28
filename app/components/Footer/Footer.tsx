@@ -95,14 +95,14 @@ export const Footer = () => {
           </a>
 
           <p className="text-l mb-2 flex items-center  justify-center  gap-4">
-            <MdLocationOn size={28} fill="white" /> 123 Veg Street, Food City
+            <MdLocationOn size={28} fill="white" /> Srinagar, Jammu & Kashmir, India
             gghh
           </p>
           <a
             href="tel:+912345678901"
             className="text-l mb-2 flex items-center justify-center gap-4"
           >
-            <MdPhone size={28} fill="white" /> +91 234 567 8901
+            <MdPhone size={28} fill="white" /> +91 9906531735
           </a>
         </div>
       </div>

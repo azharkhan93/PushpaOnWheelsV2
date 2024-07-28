@@ -1,4 +1,4 @@
-import { FaHamburger } from "react-icons/fa";
+
 export const navLinks = [
   { href: "#Home", label: "Home" },
   { href: "#About", label: "About" },
@@ -9,19 +9,19 @@ export const navLinks = [
 export const reviews = [
   {
     imageSrc: "/images/ks.webp",
-    clientName: "John Doe",
+    clientName: "Regular Client",
     reviewText:
       "The food was absolutely wonderful, from preparation to presentation, very pleasing. We especially enjoyed the special bar drinks, the cucumber/cilantro infused vodka martini, and the coconut mojito.",
   },
   {
-    imageSrc: "/images/ks.webp",
-    clientName: "Jane Smith",
+    imageSrc: "/images/momos.jpg",
+    clientName: "Regular Client",
     reviewText:
       "Everything we ordered from the menu was delicious! The service was excellent and the staff were very friendly. A great dining experience overall. We will definitely be back!",
   },
   {
-    imageSrc: "/images/ks.webp",
-    clientName: "Michael Brown",
+    imageSrc: "/images/peri.webp",
+    clientName: "Regular Client",
     reviewText:
       "The ambiance was perfect, and the vegetarian options were diverse and flavorful. It’s great to find a place that caters to vegetarian diets so well. Highly recommend!",
   },
