@@ -13,9 +13,9 @@ export async function POST(req: NextRequest) {
     }
 
     const msg = {
-      to: 'azhr999990000@gmail.com', 
+      to: 'pushpavegonwheels@gmail.com', 
       from: 'azharkhan.work101@gmail.com', 
-      subject: 'New Table Booking',
+      subject: 'New Terrace Booking',
       text: `
         Name: ${name}
         Email: ${email}

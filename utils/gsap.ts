@@ -12,13 +12,13 @@ function animateFrom(elem: HTMLElement, direction: number = 0) {
   let x = 0,
     y = direction * 100;
 
-  /* setter function */
+  
   function setXY(first: number, second: number) {
     x = first;
     y = second;
   }
 
-  /* get class flags */
+ 
   const classList = elem.classList;
   const revealFromLeft = classList.contains("reveal-from-left");
   const revealFromRight = classList.contains("reveal-from-right");
@@ -55,7 +55,7 @@ function setRevealAnimation() {
 
   gsap.utils.toArray(".reveal").forEach(function (elem: unknown) {
     const eleme = elem as HTMLElement;
-    hideElement(eleme); // assure that the element is hidden when scrolled into view
+    hideElement(eleme); 
 
     ScrollTrigger.create({
       trigger: eleme,
