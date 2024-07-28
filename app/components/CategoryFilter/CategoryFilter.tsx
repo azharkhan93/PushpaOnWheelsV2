@@ -7,9 +7,9 @@ type CategoryFilterProps = {
   onFilterChange: (category: string) => void;
 };
 
-
-
-export const CategoryFilter: React.FC<CategoryFilterProps> = ({ onFilterChange }) => {
+export const CategoryFilter: React.FC<CategoryFilterProps> = ({
+  onFilterChange,
+}) => {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
 
   const handleCategoryChange = (category: string) => {
@@ -24,22 +24,21 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({ onFilterChange }
           key={name}
           onClick={() => handleCategoryChange(name)}
           className={`px-6 py-2 rounded-md ${
-            selectedCategory === name ? 'bg-magenta text-white' : 'bg-magenta'
+            selectedCategory === name ? "bg-magenta text-white" : "bg-magenta"
           }`}
         >
           {/* <div className="flex items-center justify-center gap-3"> */}
-            {/* <Image 
+          {/* <Image 
               src={icon}
               alt={`${name} icon`}
               width={24}
               height={24}
               className="w-6 h-6 rounded-full"
             /> */}
-            {name}
+          {name}
           {/* </div> */}
         </button>
       ))}
     </div>
   );
 };
-

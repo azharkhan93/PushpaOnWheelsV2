@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import { FaStar, FaShoppingCart } from 'react-icons/fa';
+import Image from "next/image";
+import { FaStar, FaShoppingCart } from "react-icons/fa";
 
 type FoodCardProps = {
   image: string;
@@ -8,11 +8,22 @@ type FoodCardProps = {
   rating: number;
 };
 
-export const MenuCard: React.FC<FoodCardProps> = ({ image, title, price, rating }) => {
+export const MenuCard: React.FC<FoodCardProps> = ({
+  image,
+  title,
+  price,
+  rating,
+}) => {
   return (
     <div className="shadow-lg p-4 rounded-l-3xl bg-magenta">
       <div className="flex justify-between items-center mb-4">
-        <Image src={image} alt={title} width={87} height={70} className="rounded-full" />
+        <Image
+          src={image}
+          alt={title}
+          width={87}
+          height={70}
+          className="rounded-full"
+        />
         <div className="text-l font-bold text-white">₹{price}</div>
       </div>
       <h3 className="lg:text-l lg:font-semibold text-white">{title}</h3>
@@ -22,12 +33,13 @@ export const MenuCard: React.FC<FoodCardProps> = ({ image, title, price, rating 
           <span className="text-white">{rating}</span>
         </div>
         <div className="flex">
-          <FaShoppingCart size={26} fill="white" className="text-white cursor-pointer" />
+          <FaShoppingCart
+            size={26}
+            fill="white"
+            className="text-white cursor-pointer"
+          />
         </div>
       </div>
     </div>
   );
 };
-
-
-
